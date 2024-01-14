@@ -7,7 +7,7 @@ Mittlere Geschwindigkeit: \
 $ arrow(v) = frac(x_2 - x_1, t_2 - t_1) = frac(x(t_2) - x(t_1), t_2 - t_1) $
 
 Momentane Geschwindigkeit: \
-$ v(t) = lim_(triangle.stroked.t t -> 0) frac(triangle.stroked.t x, triangle.stroked.t t) = frac(d, d t)x(t)$
+$ v(t) = lim_(triangle.stroked.t t -> 0) frac(triangle.stroked.t x, triangle.stroked.t t) = frac(d, d t)x(t) $
 
 Mittlere Beschleunigung: \
 $ arrow(a) = frac(v_2 - v_1, t_2 - t_1) = frac(v(t_2) - v(t_1), t_2 - t_1) $
@@ -37,6 +37,8 @@ $ v(t) = a_0 t + v_0 $
 $ x(t) = 1 / 2 a_0 t^2 + v_0 t + x_0 $
 
 #subsection("Beliebige Bewegungen")
+$ arrow(r) = arrow(r)(t) = mat(x(t); y(t); z(t)) $
+
 Mittlere Geschwindigkeit: \
 $ arrow(v) = frac(triangle.stroked.t arrow(r), triangle.stroked.t t) $
 $ triangle.stroked.t arrow(r) = arrow(r)(t + triangle.stroked.t t) arrow(r)(t) $
@@ -64,10 +66,12 @@ $ s(t) = v_0 t + s_0 $
 
 #subsubsection("Gleichmässig beschleunigte Bewegung")
 $ a_"tangential" = a_0 eq.not 0 $
-$ v_"tangential"(t) = a_0 t + v_0  $
-$ s(t) = 1/2 a_"tangential" t^2 + v_0 t + s_0 $
+$ v(t) = a_0 t + v_0  $
+$ s(t) = 1/2 a_0 t^2 + v_0 t + s_0 $
 
 #subsection("Kreisbewegung")
+Spezialfall einer beliebigen Bewegung.
+
 Kartesische Koordination: \
 $ arrow(P) = mat(x; y) = underbrace(mat(r dot cos(phi); r dot sin(phi)), "Polar -> Kartesisch") $
 
@@ -79,9 +83,15 @@ $ arrow(P) = mat(r; phi) = underbrace(mat(|sqrt(x^2 + y^2)|; tan(y / x)), "Karte
 #subsubsection("Winkelgeschwindigkeit")
 T = Periode (Zeit pro Umdrehung) \
 f = Drehfrequenz (Umdrehungen pro Sekunde) \
+r = Radius \
+s = Strecke \
+$phi$ = Winkel \
+$omega$ = Winkelgeschwindigkeit \
 
-Bahngeschwindigkeit: \
-$ v = r dot omega $
+$ phi = s / r $
+
+Bahngeschwindigkeit v: \
+$ v = s / T = frac(phi dot r, T) = r dot omega $
 
 Drehfrequenz f: \
 $ f = 1 / T $
@@ -93,27 +103,47 @@ Periode: \
 $ omega = 2pi f $
 
 #subsubsection("Winkelbeschleunigung")
-a = Winkelbeschleunigung \
-$ a_"tangential" = frac(d v, d t) = frac(d, d t) r dot omega = r dot a $
+$alpha$ = Winkelbeschleunigung \
+
+$ alpha = frac(d, d t) omega = dot(w) = frac(d^2 phi, d t^2) = dot.double(phi) $
+$ a_"tangential" = frac(d v, d t) = frac(d, d t) r dot omega = r dot alpha $
 
 #subsubsection("Gleichförmige Kreisbewegung")
 $ a = 0 $
 $ omega = omega_0 = "konstant" $
 $ phi(t) = omega_0 t + phi_0 $
 
+Tacho (Bahnangaben): \
+$ a = alpha dot r = 0 $
+$ v = w_0 dot r = "konstant" = v_0 $
+$ s = w_0 r t + phi_0 r $
+
 #subsubsection("Gleichförmig beschleunigte Kreisbewegung")
 $ a = a_0 = "konstant" $
 $ omega = a_0 t + omega_0 $
 $ phi = 1 / 2 a_0 t^2 + omega_0 t + phi_0 $
 
-
 #subsection("Wurfbahnen")
 
 #subsubsection("Senkrechter Wurf")
+$ a(t) = -g = "konstant" $
+$ v(t) = -g t + v_0 (v_0 < 0 = "nach unten werfen") $
+$ x(t) = -frac(1, 2)g t^2 + v_0 t + x_0 $
+
 
 #subsubsection("Freier Fall")
+$ a(t) = -g = "konstant" $
+$ v(t) = -g t + 0 $
+$ x(t) = -frac(1, 2)g t^2 + x_0 $
 
 #subsubsection("Horizontaler Wurf")
+$ a_x(t) = 0 $
+$ v_x(t) = v_0 $
+$ x(t) = v_0 t $
+
+$ a_y(t) = -g = "konstant" $
+$ v_y(t) = -g t + underbrace(v_0, 0) $
+$ x(t) = frac(1, 2)g t + y_0 $
 
 #subsubsection("Schiefer Wurf")
 $ a_x = 0 $

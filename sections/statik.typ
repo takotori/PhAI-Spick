@@ -24,11 +24,15 @@ $ F_"Gleit" \u{2248} mu_H dot F_N $
 #image("../figures/reibung.png")
 
 #subsection("Drehmoment")
+Linke Hand Regel (Schraubenzieher): \
+
+
 Drehmoment M ($a$ = Hebellänge): \
 $ M = a dot F $
 
 #image("../figures/drehmoment.png")
 
+#colbreak()
 #subsection("Deformierbarer Körper")
 A = Fläche $m^2$, \
 F = Kraft senkrecht zur Fläche $N$, \
@@ -45,8 +49,12 @@ Hook'sche Gesetz \ (relative Änderung [0-1]): \
 $ epsilon = frac(1, E) sigma $
 
 #subsubsection("Dehnung")
+A = Querschnittsfläche \
 
-Dehnung ($triangle.stroked.t l$ = Verlängerung):\
+Verlängerung $ triangle.stroked.t l$: \
+$ triangle.stroked.t l = l F / A $
+
+Dehnung $epsilon$:\
 $ epsilon = frac(triangle.stroked.t l, l) $
 
 Schubspannung $tau$: \

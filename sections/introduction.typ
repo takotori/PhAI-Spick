@@ -4,6 +4,10 @@
 
 #subsection("Trigonometrie")
 
+GAGA \
+HHAG \
+SCT \
+
 $ a = "Ankathete" $
 $ g = "Gegenkathete" $
 $ h = "Hypothenuse" $  
