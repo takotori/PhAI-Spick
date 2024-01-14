@@ -123,6 +123,19 @@ $ a = a_0 = "konstant" $
 $ omega = a_0 t + omega_0 $
 $ phi = 1 / 2 a_0 t^2 + omega_0 t + phi_0 $
 
+#subsection("Zentripetalkraft")
+$F_c$ = Zentripetalkraft \
+$a_c$ = Zentripetalbeschleunigung \
+m = Masse \
+$v_t$ = Tangentialgeschwindigkeit \
+r = Radius \
+d = Durchmesser der Kurve \
+
+$ F_c = frac(m dot v^2_t, r) $
+$ a_c = frac(2v^2_t, d) $
+
+#image("../figures/zentripetal.png", width: 80%)
+
 #subsection("Wurfbahnen")
 
 #subsubsection("Senkrechter Wurf")

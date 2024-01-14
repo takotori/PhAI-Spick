@@ -32,7 +32,6 @@ $ M = a dot F $
 
 #image("../figures/drehmoment.png")
 
-#colbreak()
 #subsection("Deformierbarer Körper")
 A = Fläche $m^2$, \
 F = Kraft senkrecht zur Fläche $N$, \
