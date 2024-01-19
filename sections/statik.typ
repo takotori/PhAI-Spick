@@ -3,14 +3,20 @@
 #section("Statik")
 
 #subsection("Schwerkraft")
+m1 = Massepunkt 1 \
+m2 = Massepunkt 2 \
+
 Gravitationsgesetz: \
 $ F_G = G frac(m_1 m_2, r^2) $
 
 Gravitationskonstante G: \
-$ G = 6.67 dot 10^(-11) frac("m"^3, "kgs"^2) $
+$ G = 6.67 dot 10^(-11) frac("m"^3, k g dot s^2) $
 
 Fallbeschleuningung g: \
-$ m_E = 5.972 dot 10^24 "kg", #" " r_E = 6378 "km"$
+$ m_E = 5.972 dot 10^24 k g $
+$ r_E = 6378 "km" $
+
+$ g = 6.67 dot 10^(-11) dot frac(m_E, r_E^2) $
 $ g = 9.81 frac("m", "s"^2) $
 
 #subsection("Reibung")
@@ -45,7 +51,7 @@ Zugspannung $sigma$: \
 $ sigma := frac(F_⊥, A) = -p $
 
 Hook'sche Gesetz \ (relative Änderung [0-1]): \
-$ epsilon = frac(1, E) sigma $
+$ epsilon = sigma / E $
 
 #subsubsection("Dehnung")
 A = Querschnittsfläche \
