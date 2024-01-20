@@ -49,6 +49,10 @@ p = Druckspannung
 
 Zugspannung $sigma$: \
 $ sigma := frac(F_⊥, A) = -p $
+$ sigma dot E = F / A $
+
+Druckspannung $p$: \
+$ p = F / A = - sigma $
 
 Hook'sche Gesetz \ (relative Änderung [0-1]): \
 $ epsilon = sigma / E $
@@ -93,7 +97,10 @@ G = Schubmodul \
 l = Länge der Torsionsfeder \
 r = Radius der Torsionsfeder \
 
+Drehmoment Torsionsfeder: \
 $ M = c dot phi $
+
+Federkonstante: \
 $ c = frac(pi G r^4, 2l) $
  
 Bei M konstant:
@@ -127,6 +134,8 @@ p = Dichte des Materials \
 E = Elastizitätsmodul \
 z = Auslenkung \
 
+Durchbiegung am Ende: \
 $ z = frac(4l^3, E b h^3) $
-Maximale Durchbiegung: \
+
+Durchbiegung in der Mitte: \
 $ z = frac(5p g l^4, 32 E h^2) $

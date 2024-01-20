@@ -20,6 +20,10 @@ $ v = sqrt(2 g h) $
 
 #subsection("Lineare Bewegung")
 #subsubsection("Gleichförmige Bewegung")
+s = Strecke (m) \
+v = Geschwindigkeit (frac(m,s)) \
+t = Zeit (s) \
+
 Eine gleichförmige Bewegung ist eine Bewegung, bei der die Beschleunigung 0 ist.
 $ a(t) = 0 $
 
@@ -29,12 +33,27 @@ $ v(t) = v_0 = "konstant" $
 Ort durch Integration: \
 $ x(t) = v_0 dot t + x_0 $
 
+Anderes:
+$ s = v dot t $
+$ v = frac(s, t) $
+$ t = frac(s, v) $
+
 #subsubsection("Gleichmässig beschleunigte Bewegung")
-Bei einer gleichmässig beschleunigten Bewegung ist
-die Beschleunigung konstant.
+Bei einer gleichmässig beschleunigten Bewegung ist die Beschleunigung konstant.
+a = Beschleunigung ($frac(m,s^2)$) \
+v = Geschwindigkeit ($frac(m,s)$) \
+t = Zeit (s) \
+
 $ a(t)= a_0 = "konstant" $
 $ v(t) = a_0 t + v_0 $
-$ x(t) = 1 / 2 a_0 t^2 + v_0 t + x_0 $
+$ s(t) = 1 / 2 a_0 t^2 + v_0 t + x_0 $
+
+$ a = 1/2 frac(v, t) $
+$ t = frac(v, a) $
+
+$ v = a dot t $
+$ a = frac(v, t) $
+$ t = frac(v, a) $
 
 #subsection("Beliebige Bewegungen")
 $ arrow(r) = arrow(r)(t) = mat(x(t); y(t); z(t)) $

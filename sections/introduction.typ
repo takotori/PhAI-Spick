@@ -1,6 +1,11 @@
 #import "../utils.typ": *
 
 #section("Einführung")
+#subsection("Quadratische Gleichung")
+$ a x^2 + b x + c = 0 $
+
+Mitternachtsformel: \
+$ x_{1,2} = frac(-b plus.minus sqrt(b^2 - 4a c), 2a) $
 
 #subsection("Formen")
 #subsubsection("Kreis")
