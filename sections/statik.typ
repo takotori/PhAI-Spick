@@ -23,9 +23,17 @@ $ g = 9.81 frac("m", "s"^2) $
 Wenn Körper auf horizontale Fläche liegt:
 $ F_G = - F_N $
 
-Haft-/Gleitreibungskraft: \
+Gleitreibungskraft: \
+$F_N$ = Gleitreibung \
+$mu_G$ = Gleitreibungskoeffizient \
+
+$ F_R = mu_G dot F_N $
+
+Haftreibungskraft: \
+$F_N$ = Gleitreibung \
+$mu_H$ = Haftreibungskoeffizient \
+
 $ F_R = mu_H dot F_N $
-$ F_"Gleit" \u{2248} mu_H dot F_N $
 
 #image("../figures/reibung.png")
 
