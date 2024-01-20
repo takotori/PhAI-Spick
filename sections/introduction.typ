@@ -4,39 +4,41 @@
 #subsection("Quadratische Gleichung")
 $ a x^2 + b x + c = 0 $
 
-Mitternachtsformel: \
+#bold("Mitternachtsformel"): \
 $ x_{1,2} = frac(-b plus.minus sqrt(b^2 - 4a c), 2a) $
+
+#bold("")
 
 #subsection("Formen")
 #subsubsection("Kreis")
-Umfang C: \
+#bold("Umfang C:") \
 $ C = pi dot 2r $
 
-Fläche A: \
+#bold("Fläche A:") \
 $ A = pi dot r^2 $
 
 #subsubsection("Dreieck")
-Umfang C: \
+#bold("Umfang C:") \
 $ C = a + b + c $
 
-Fläche A: \
+#bold("Fläche A:") \
 $ A = frac(1, 2) dot b dot h $
 
-Pythagoras: \
+#bold("Pythagoras:") \
 $ c = sqrt(a^2 + b^2) $
 
 #subsubsection("Kugel")
-Volumen V: \
+#bold("Volumen V:") \
 $ V = frac(4, 3) dot pi dot r^3 $
 
-Oberfläche A: \
+#bold("Oberfläche A:") \
 $ A = 4 dot pi dot r^2 $
 
 #subsection("Trigonometrie")
 
-$ a = "Ankathete" $
-$ g = "Gegenkathete" $
-$ h = "Hypothenuse" $  
+$a$ = Ankathete \
+$g$ = Gegenkathete \
+$h$ = Hypothenuse \
 
 $ sin(a) = g/h, #" " cos(a) = a/h, #" " tan(a) = g/a = sin(a)/cos(a) $
 $ g = h dot sin(a), #" " h = frac(g, sin(a)), #" " a = arcsin(g / h)$
@@ -44,7 +46,7 @@ $ g = h dot sin(a), #" " h = frac(g, sin(a)), #" " a = arcsin(g / h)$
 #image("../figures/circle.png", width: 60%)
 
 #subsection("Vektor")
-Kreuzprodukt:
+#bold("Kreuzprodukt:")
 $ mat(a_x; a_y; a_z;) × mat(b_x; b_y; b_z;) := mat(a_y b_z - a_z b_y; a_z b_x - a_x b_z; a_x b_y - a_y b_x;) $
 
 #subsection("Ableitung")

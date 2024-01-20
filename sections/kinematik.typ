@@ -3,19 +3,19 @@
 #section("Kinematik")
 
 #subsection("Bewegung")
-Mittlere Geschwindigkeit: \
+#bold("Mittlere Geschwindigkeit"): \
 $ arrow(v) = frac(x_2 - x_1, t_2 - t_1) = frac(x(t_2) - x(t_1), t_2 - t_1) $
 
-Momentane Geschwindigkeit: \
+#bold("Momentane Geschwindigkeit:") \
 $ v(t) = lim_(triangle.stroked.t t -> 0) frac(triangle.stroked.t x, triangle.stroked.t t) = frac(d, d t)x(t) $
 
-Mittlere Beschleunigung: \
+#bold("Mittlere Beschleunigung:") \
 $ arrow(a) = frac(v_2 - v_1, t_2 - t_1) = frac(v(t_2) - v(t_1), t_2 - t_1) $
 
-Momentane Beschleunigung: \
+#bold("Momentane Beschleunigung:") \
 $ a(t) = lim_(triangle.stroked.t t -> 0) frac(v(t) - v(t - triangle.stroked.t t), triangle.stroked.t t) = frac(d, d t)v(t) $
 
-Aufprallgeschwindigkeit (Höhe h): \
+#bold("Aufprallgeschwindigkeit (Höhe h):") \
 $ v = sqrt(2 g h) $
 
 #subsection("Lineare Bewegung")
@@ -24,16 +24,16 @@ s = Strecke (m) \
 v = Geschwindigkeit (frac(m,s)) \
 t = Zeit (s) \
 
-Ort: \
+#bold("Ort:") \
 $ x(t) = v_0 dot t + x_0 $
 
-Geschwindigkeit: \
+#bold("Geschwindigkeit:") \
 $ v(t) = v_0 = "konstant" $
 
-Beschleunigung: \
+#bold("Beschleunigung:") \
 $ a(t) = 0 $
 
-Anderes:
+#bold("")Anderes:
 $ s = v dot t $
 $ v = frac(s, t) $
 $ t = frac(s, v) $
@@ -71,7 +71,7 @@ $ x = frac(v^2 - v^2_0, 2a) + x_0 $
 $ v = sqrt(v^2_0 + 2a dot (x - x_0)) $
 $ a = frac(v^2 - v^2_0, 2 dot (x - x_0)) $
 
-Idk what this is for:
+#bold("Idk what this is for:") \
 $ a = 1/2 frac(v, t) $
 $ t = frac(v, a) $
 
@@ -82,18 +82,18 @@ $ t = frac(v, a) $
 #subsection("Beliebige Bewegungen")
 $ arrow(r) = arrow(r)(t) = mat(x(t); y(t); z(t)) $
 
-Mittlere Geschwindigkeit: \
+#bold("Mittlere Geschwindigkeit:") \
 $ arrow(v) = frac(triangle.stroked.t arrow(r), triangle.stroked.t t) $
 $ triangle.stroked.t arrow(r) = arrow(r)(t + triangle.stroked.t t) arrow(r)(t) $
 
-Momentane Geschwindigkeit: \
+#bold("Momentane Geschwindigkeit:") \
 $ arrow(v)(t) := lim_(triangle.stroked.t t -> 0) frac(arrow(r), triangle.stroked.t t) = frac(d, d t)arrow(r)(t) $
 
 #subsubsection("Beschleunigung")
-Mittlere Beschleunigung: \
+#bold("Mittlere Beschleunigung:") \
 $ arrow(a) = frac(triangle.stroked.t arrow(v), triangle.stroked.t t) $
 
-Momentane Beschleunigung: \
+#bold("Momentane Beschleunigung:") \
 $ arrow(a) := frac(d, d t) arrow(v) = dot(arrow(v)) = frac(d^2, d t^2) arrow(r) = dot.double(arrow(r)) $
 
 $ arrow(a) = frac(d^2, d t^2) arrow(r) = frac(d, d t) arrow(v) = lim_(triangle.stroked.t t -> 0) frac(arrow(v)(t) - arrow(v)(t - triangle.stroked.t t), triangle.stroked.t t) $
@@ -115,10 +115,10 @@ $ s(t) = 1/2 a_0 t^2 + v_0 t + s_0 $
 #subsection("Kreisbewegung")
 Spezialfall einer beliebigen Bewegung.
 
-Kartesische Koordination: \
+#bold("Kartesische Koordination:") \
 $ arrow(P) = mat(x; y) = underbrace(mat(r dot cos(phi); r dot sin(phi)), "Polar -> Kartesisch") $
 
-Polarkoordinaten: \
+#bold("Polarkoordinaten:") \
 $ arrow(P) = mat(r; phi) = underbrace(mat(|sqrt(x^2 + y^2)|; tan(y / x)), "Kartesisch -> Polar") $
 
 #image("../figures/koordinatensystem.png", width: 80%)
@@ -131,23 +131,23 @@ s = Strecke \
 $phi$ = Winkel \
 $omega$ = Winkelgeschwindigkeit \
 
-Winkel $phi$: \
+#bold("Winkel") $phi$: \
 $ phi = s / r $
 
-Winkelgeschwindigkeit $omega$: \
+#bold("Winkelgeschwindigkeit") $omega$: \
 $ omega = frac(2 pi, T) $
 $ v = omega dot r $
 
-Bahngeschwindigkeit v: \
+#bold("Bahngeschwindigkeit") $v$: \
 $ v = s / T = frac(phi dot r, T) = r dot omega $
 
-Drehfrequenz f: \
+#bold("Drehfrequenz") $f$: \
 $ f = 1 / T $
 
-Umlaufzeit T: \
+#bold("Umlaufzeit") $T$: \
 $ T = frac(2 pi, omega) = 1 / f $
 
-Periode: \
+#bold("Periode:") \
 $ omega = 2pi f $
 
 #subsubsection("Winkelbeschleunigung")
@@ -165,7 +165,7 @@ $ a = 0 $
 $ omega = omega_0 = "konstant" $
 $ phi(t) = omega_0 t + phi_0 $
 
-Tacho (Bahnangaben): \
+#bold("Tacho (Bahnangaben):") \
 $ a = alpha dot r = 0 $
 $ v = w_0 dot r = "konstant" = v_0 $
 $ s = w_0 r t + phi_0 r $
@@ -180,7 +180,7 @@ $ a = a_0 = "konstant" $
 $ omega = a_0 t + omega_0 $
 $ phi = 1 / 2 a_0 t^2 + omega_0 t + phi_0 $
 
-Ohne Anfangswerte: \
+#bold("Ohne Anfangswerte:") \
 $phi$ = Winkel \
 $omega$ = Winkelgeschwindigkeit \
 $a$ = Winkelbeschleunigung \
@@ -189,7 +189,7 @@ $ phi = frac(omega^2, 2a) $
 $ omega = sqrt(2 a phi) $
 $ a = frac(omega^2, 2 phi) $
 
-Mit Anfangswerte: \
+#bold("Mit Anfangswerte:") \
 $phi$ = Winkel \
 $omega$ = Winkelgeschwindigkeit \
 $a$ = Winkelbeschleunigung \
@@ -223,11 +223,11 @@ $ a_y(t) = -g = "konstant" $
 $ v_y(t) = -g t + underbrace(v_0, 0) $
 $ x(t) = frac(1, 2)g t + y_0 $
 
-Wurfhöhe: \
+#bold("Wurfhöhe:") \
 $v_0$ = Anfangsgeschwindigkeit \
 $ h = frac(v_0^2, 2g) $
 
-Steigzeit t: \
+#bold("Steigzeit") $t$: \
 $v_0$ = Anfangsgeschwindigkeit \
 $ t = v_0 / g $
 
@@ -242,26 +242,26 @@ $ a_y = -g $
 $ v_y(t) = v_0 dot sin(a) - g dot t $
 $ y(t) = - frac(1, 2) g dot t^2 + v_0 dot sin(a) dot t + y_0 $
 
-Bahnkurve y(x): \
+#bold("Bahnkurve") $y(x)$: \
 $ y(x) = tan(a) dot x - frac(g, 2 dot v_0^2 dot cos(a)^2) dot x^2 $
 
-Horizontale Distanz zur Zeit t: \
+#bold("Horizontale Distanz zur Zeit") $t$: \
 $ x(t) = v_0 dot cos(a) dot t $
 
-Vertikale Distanz zur Zeit t: \
+#bold("Vertikale Distanz zur Zeit") $t$: \
 $ y(t) = v_0 dot t dot sin(a) - frac(g dot t^2, 2) $
 
-Maximale Wurfdistanz: \
+#bold("Maximale Wurfdistanz") $d$: \
 $ d = frac(v_0^2, g) dot sin(2 dot a) $
 
-Maximale Wurfhöhe: \
+#bold("Maximale Wurfhöhe") $h_max$: \
 $ h_max = frac(v_0^2, 2g) dot sin(a)^2 $
 
-Distanz bis zur maximalen Wurfhöhe: \
+#bold("Distanz bis zur maximalen Wurfhöhe") $X_max$: \
 $ X_max = frac(V_0^2, g) dot sin(a)^2 dot cos(a) = d / 2 $
 
-Konstante horizontale Geschwindigkeit: \
+#bold("Konstante horizontale Geschwindigkeit") $v_x$: \
 $ v_x = v_0 dot cos(a) $
 
-Vertikale Geschwindigkeit zur Zeit t: \
+#bold("Vertikale Geschwindigkeit zur Zeit") $t$: \
 $ v_y = v_0 dot sin(a) - g dot t $
