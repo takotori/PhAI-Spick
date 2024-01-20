@@ -200,19 +200,6 @@ $ phi = frac(omega^2 - omega^2_0, 2a) + phi_0 $
 $ omega = sqrt(w^2_0 + 2a dot (phi - phi_0)) $
 $ a = frac(omega^2 - omega^2_0, 2 dot (phi - phi_0)) $
 
-#subsection("Zentripetalkraft")
-$F_c$ = Zentripetalkraft \
-$a_c$ = Zentripetalbeschleunigung \
-m = Masse \
-$v_t$ = Tangentialgeschwindigkeit \
-r = Radius \
-d = Durchmesser der Kurve \
-
-$ F_c = frac(m dot v^2_t, r) $
-$ a_c = frac(2v^2_t, d) $
-
-#image("../figures/zentripetal.png", width: 80%)
-
 #subsection("Wurfbahnen")
 
 #subsubsection("Senkrechter Wurf")
