@@ -4,7 +4,7 @@
   set page(
     paper: "a4", 
     flipped: true, 
-    columns: 5,
+    columns: 4,
     margin: 20pt,
   )
 

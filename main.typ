@@ -9,5 +9,7 @@
 #include "sections/kinematik.typ"
 #pagebreak()
 #include "sections/dynamik.typ"
+#pagebreak()
+#include "sections/examples.typ"
 
 // #image("figures/meme.png", width: 75%)
