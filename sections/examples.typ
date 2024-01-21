@@ -32,7 +32,7 @@ $ l_B = 2.577m $
 
 #subsection("Drehmoment")
 #align(center, image("../figures/exercise/kran.png", width: 75%))
-Ein Kran hebt einen Stein der Masse $G = 150k g$ wie in der Skizze dargestellt. Der Kranarm ist an Punkt A drehbar gelagert und das Seil ist in Punkt B um eine Umlenkrolle geschleift und am Kranarm fest verbunden. Welcher Kraft $F_S$ ist das Seil ausgesetzt? \
+Ein Kran hebt einen Stein der Masse $G = 150k g$ wie in der Skizze dargestellt. Der Kranarm ist an Punkt A drehbar gelagert und das Seil ist in Punkt B um eine Umlenkrolle geschleift und am Kranarm fest verbunden. \
 Berechnen sie die Kraft, mit welcher das Kranlager an Punkt A auf den Kranarm wirkt, wenn das System im Gleichgewicht ist.
 #align(center, image("../figures/exercise/kranKräfte.png", width: 100%))
 

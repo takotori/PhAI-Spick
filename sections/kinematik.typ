@@ -124,10 +124,10 @@ $ arrow(P) = mat(r; phi) = underbrace(mat(|sqrt(x^2 + y^2)|; tan(y / x)), "Karte
 #image("../figures/koordinatensystem.png", width: 80%)
 
 #subsubsection("Winkelgeschwindigkeit")
-T = Periode (Zeit pro Umdrehung) \
-f = Drehfrequenz (Umdrehungen pro Sekunde) \
-r = Radius \
-s = Strecke \
+$T$ = Periode (Zeit pro Umdrehung) \
+$f$ = Drehfrequenz (Umdrehungen pro Sekunde) \
+$r$ = Radius \
+$s$ = Strecke \
 $phi$ = Winkel \
 $omega$ = Winkelgeschwindigkeit \
 
@@ -137,6 +137,8 @@ $ phi = s / r $
 #bold("Winkelgeschwindigkeit") $omega$: \
 $ omega = frac(2 pi, T) $
 $ v = omega dot r $
+$ "oder irgendwie das unten" $
+$ omega = a dot t $
 
 #bold("Bahngeschwindigkeit") $v$: \
 $ v = s / T = frac(phi dot r, T) = r dot omega $

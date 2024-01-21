@@ -193,9 +193,9 @@ r = Radius \
 $omega$ = Winkelgeschwindigkeit \
 $v = omega dot r$ = Umfangsgeschwindigkeit bei Radius r
 
-$F_Z = m dot a_r $
-$F_Z = m dot omega^2 dot r $
-$F_Z = m dot v^2 / r $
+$ F_Z = m dot a_r $
+$ F_Z = m dot omega^2 dot r $
+$ F_Z = m dot v^2 / r $
 
 #bold("Zentripetalbeschleunigung:") \
 $ a_r = frac(v^2, r) = omega^2 dot r $
@@ -223,8 +223,9 @@ $ F_C = 2 dot v_r dot omega $
 $M$ = Betrag des Drehmoments um Achse A \
 $a$ = Winkelbeschleunigung um Achse A \
 $J$ = Trägheitsmoment bzgl. der Achse A \
+$r$ = Radius \
 
-$ M = J_A dot a $
+$ M = J_A dot a = r dot F $
 
 #bold("Trägheitsmoment J einer Punkt-Masse") $m_0$: \
 $m_0$ = Punktmasse
@@ -261,25 +262,25 @@ $omega$ = Winkelgeschwindigkeit \
 $ P = M dot omega $
 
 #bold("Totale Energie") $E_"tot"$: \
-$E_"tra"$ = Translationsenergie
+$E_"tra"$ = Translationsenergie \
 $E_"rot"$ = Rotationsenergie \
 
 $ E_"tot" = E_"tra" + E_"rot" $
 
 #bold("Rotationsenergie") $E_"rot"$: \
-$J_"SP"$ = Trägheitsmoment bzgl. Schwerpunkt
+$J_"SP"$ = Trägheitsmoment bzgl. Schwerpunkt \
 $omega$ = Winkelgeschwindigkeit \
 
 $ E_"rot" = frac(J_"SP" dot omega^2, 2) $
 
 #bold("Translationsenergie") $E_"tra"$: \
-$m$ = Masse
+$m$ = Masse \
 $v_"SP"$ = Schwerpunktgeschwindigkeit \
 
 $ E_"tra" = frac(m dot v^2_"SP", 2) $
 
 #bold("Drehimpuls L bei Rotation um eine Achse A:") \
-$J_A$ = Trägheitsmoment bzgl. Achse A
+$J_A$ = Trägheitsmoment bzgl. Achse A \
 $omega$ = Winkelgeschwindigkeit \
 
 $ L = J_A dot omega $
