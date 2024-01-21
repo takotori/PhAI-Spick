@@ -1,6 +1,34 @@
 #import "../utils.typ": *
 
 #section("Examples")
+#subsection("Kräfte")
+#subsubsection("Gewicht am Seil")
+#align(center, image("../figures/exercise/gewichtKräfte.png", width: 75%))
+Ein (masseloses) Seil ist an den Punkten A und B an zwei gegenüberliegenden Wänden befestigt, wobei die Wände im Abstand $a = 2m$ stehen. Der Befestigungspunkt A befindet sich $1m$ unterhalb vom Befestigungspunkt B. Eine Masse $m_G = 20 k g$ werde an das Seil gehängt (wobei sich die Masse entlang des Seils bewegen kann). Die beiden Seilenden haben
+einen Winkel von $alpha = 30°$ zum Lot hin. \
+
+a) Wie gross sind die einzelnen Seilkräfte? \
+$ x = underbrace(0, F_G) + underbrace(cos(60) dot F_"s1", F_"s1") - underbrace(cos(60) dot F_"s2", F_"s2") = 0 $
+$ y = underbrace(-F_G, F_G) + underbrace(cos(30) dot F_"s1", F_"s1") + underbrace(cos(30) dot F_"s2", F_"s2") = 0 $
+Nach $F_"s1"$ und $F_"s2"$ auflösen oder im TR lösen gibt:
+$ F_"s1" = F_"s2" = 113.27N $
+
+b) Wie lang sind die einzelnen Seilabschnitte? \
+#align(center, image("../figures/exercise/seillängen.png", width: 60%))
+
+Formel für x herausfinden:
+$ d / l_a = sin(alpha) => d  = l_a dot sin(alpha) $
+$ frac(a - d, l_b) = sin(alpha) => a - d = l_b dot sin(alpha) $
+$ x: underbrace(l_a dot sin(alpha), d) + underbrace(l_b dot sin(alpha), a - d) = "a"  $
+
+Formel für y herausfinden:
+$ A_1 / l_a = cos(alpha) => A_1 = cos(alpha) dot l_A $
+$ frac(A_1 + b, l_b) = cos(alpha) => A_1 + b = cos(alpha) dot l_b $
+$ y: b + underbrace(cos(alpha) dot l_A, A_1) = underbrace(cos(alpha) dot l_b, A_1 + b) $
+
+x und y nach $l_a$ und $l_b$ im TR auflösen:
+$ l_A = 1.422m $
+$ l_B = 2.577m $
 
 #subsection("Drehmoment")
 #align(center, image("../figures/exercise/kran.png", width: 75%))
@@ -20,7 +48,7 @@ $ F_S dot cos(30) + F_S dot cos(60) + A_"Ay" - 150 k g dot 9.81 = 0 $
 #subsection("Geschwindigkeit")
 #subsubsection("Tuch wegziehen")
 Auf einem Tisch steht eine Blumenvase. Wir wollen das Tischtuch wegziehen, ohne dass die Vase herunterfällt. \
-Das Tuch wird ruckartig auf eine konstante Ohne Anfangswerte Geschwindigkeit $v_0$ beschleunigt (die für die Beschleunigung benötigte Zeit wird vernachlässigt) und wird dann mit dieser konstanten Geschwindigkeit auf einer Strecke von $60c m$ bewegt. Die Gleitreibung zwischen Vase und Tischtuch hat den Wert $µ_G = 0.3$. Wie schnell muss daS Tuch bewegt werden, damit sich die Vase in der gleichen Zeit höchstens $5c m$ bewegt. \
+Das Tuch wird ruckartig auf eine konstante Geschwindigkeit $v_0$ beschleunigt (die für die Beschleunigung benötigte Zeit wird vernachlässigt) und wird dann mit dieser konstanten Geschwindigkeit auf einer Strecke von $60c m$ bewegt. Die Gleitreibung zwischen Vase und Tischtuch hat den Wert $µ_G = 0.3$. Wie schnell muss daS Tuch bewegt werden, damit sich die Vase in der gleichen Zeit höchstens $5c m$ bewegt? \
 
 Zuerst können wir die Zeit durch einige der Grössen ausdrücken:
 $ t = S_T / v_0 $
@@ -29,7 +57,7 @@ Beschleunigt wird unsere Vase durch die Reibung des durchrutschenden Tischtuches
 $ m dot a = mu_G dot m dot g $
 $ a = mu_G dot g $
 
-Nun können wir die Strecke des Vase berechnen:
+Nun können wir die Strecke der Vase berechnen:
 $ t = S_T / v_0 S_V = a_v / 2 dot t^2 $
 $ t = 0.6 / v_0 0.05 = frac(0.3 dot 9.81, 2) dot t^2 $
 $ v = 3.25 m/s $
@@ -51,6 +79,68 @@ $ d_min = S_B - S_A $
 $ d_min = a_B / 2 dot t^2_x + v_"B0" dot t_x +d - v_"A0" dot t_x $
 $ t_x = 28.8 $
 $ a_B = 0.39 $
+
+#subsection("Würfe")
+#subsubsection("Schiefer Wurf mit Basketball")
+#align(center, image("../figures/exercise/basketballwurf.png", width: 75%))
+Ein Basketball mit $30c m$ Durchmesser soll in einem Abwurfwinkel von $70°$ zur Horizontalen direkt in den Basketball-Korb geworfen werden aus einer Höhe von $2.1m$ (Ballmittelpunkt). Die Mitte des Korbrings von 35cm Durchmesser befindet sich in einer Distanz von $2.7m$ und in $3.2m$ Höhe.
+
+$ a_x = 0 $
+$ v_x(t) = v_0 dot cos(phi) $
+$ x(t) = v_0 dot cos(phi) dot t + underbrace(0, "Anfangshöhe") $
+
+$ a_y = -g $
+$ v_x(t) = v_0 dot sin(phi) - g dot t $
+$ y(t) = -1/2 g t^2 + v_0 dot sin(phi) dot t + underbrace(2.1m, "Anfangshöhe") $
+
+a) Was ist die Abwurf-Geschwindigkeit unter der Annahme eines perfekten Wurfs (Ballmittelpunkt passiert genau in der Korbmitte)? Wie lange braucht der Ball bis zur Korbmitte? 
+Formel für Abwurfgeschwindigkeit:
+$ x(t): v_0 dot cos(phi) dot t = 2.7m => v_0 = frac(2.7m, cos(phi) dot t) $
+
+Formel zum $t$ herausfinden:
+$ y(t): -1/2 g t^2 + v_0 dot sin(phi) dot t + 2.1m = 3.2m $
+
+x und y nach $t$ und $v_0$ im TR auflösen:
+$ t = 1.13s $
+$ v_0 = 6.95 m/s $
+
+c) Welche maximale Höhe erreicht der Ball (Referenzpunkt: Ballmitte)? 
+$ h_max = frac(v_0, 2 dot g) dot sin(phi)^2 + 2.1m $
+$ h_max = frac(6.95 m/s, 2 dot g) dot sin(70)^2 + underbrace(2.1m, "Abwurfhöhe") $
+$ h_max = 4.27m $
+
+d) In welcher Distanz und Höhe relativ zur Abwurfstelle befindet sich der Ball nach 1.1s?
+$ x(1.1) = 6.95 dot cos(70) dot 1.1 = 2.7m $
+$ y(1.1) = -1/2 g dot 1.1^2 + 6.95 dot sin(70) dot 1.1 = 1.1m $
+
+#subsubsection("Schiefer Wurf mit Schlauch")
+Ein Schlauch wird so gehalten, dass ein kollimierter Wasserstrahl mit $15m/s$ unter $55°$ gegenüber der Horizontalen nach oben spritzt. In $7.0m$ Entfernung befindet sich eine Wand.
+
+$ a_x = 0 $
+$ v_x(t) = v_0 dot cos(phi) $
+$ x(t) = v_0 dot cos(phi) dot t + underbrace(x_0, "Anfangshöhe") $
+
+$ a_y = -g $
+$ v_x(t) = v_0 dot sin(phi) - g dot t $
+$ y(t) = -1/2 g t^2 + v_0 dot sin(phi) dot t + underbrace(x_0, "Anfangshöhe") $
+
+a) Wo befindet sich das Wasser 0.5 s nach Verlassen der Schlauchdüse und welche Geschwindigkeit hat es?
+Ort: \
+$ x(0.5) = 15m/s dot cos(55) dot 0.5s = 4.3m $
+$ y(0.5) = -1/2 g dot 0.5^2 + 15 m/s dot sin(55) dot 0.5 = 4.9m $
+
+Geschwindigkeit: \
+$ v_x(0.5) = 15 m/s cos(55) = 8.6 m/s $
+$ v_y(0.5) = 15 m/s dot sin(55) - g dot t = 7.3 3/s $
+
+b) Nach welcher Zeit und in welcher Höhe über der Schlauchdüse trifft das Wasser auf die Wand?
+$ underbrace(7m, x(t)) = v_0 dot cos(phi) dot t $
+$ t = frac(7m, 15 m/s dot cos(55)) = 0.8s $
+$ y(0.8) = -1/2 g dot 0.8^2 + 15 m/s dot sin(55) dot 0.8 = 6.7m $
+
+c) Wie weit (auf der Höhe der Düse) und wie hoch würde das Wasser ohne Wand spritzen?
+$ d = v^2_0 / g dot sin(2 dot phi) = 21.55 m $
+$ h_max = frac(v^2_0, 2 dot g) dot sin(phi)^2 = 7.6m $
 
 #subsection("Trägheitsmoment")
 #subsubsection("Herabrollen Stahlkugel")
