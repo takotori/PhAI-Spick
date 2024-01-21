@@ -80,6 +80,53 @@ $ d_min = a_B / 2 dot t^2_x + v_"B0" dot t_x +d - v_"A0" dot t_x $
 $ t_x = 28.8 $
 $ a_B = 0.39 $
 
+#subsection("Bewegung")
+#subsubsection("U-Bahn")
+Eine U-Bahn legt zwischen 2 Stationen einen Weg von $3k m$ zurück. Aus der Anfahrbeschleunigung $a_A = - 0.6 m/s^2$ und der Höchstgeschwindigkeit $v_"max" = 90 frac(k m, h)$ soll der Anfahrweg, Bremsweg, Wegstrecker der gleichförmigen Bewegung und die Fahrzeit ermittelt werden. \
+
+Aus der konstanten Beschleunigung $a_A$ folgt beim Anfahren ein Geschwindigkeitsverlauf
+$ v_A = a_A dot t $
+
+Mit der vorgegebenen Höchstgeschwindigkeit findet man die Anfahrtzeit
+$ t_A = v_"max" / a_A = frac(90 dot 1000, 3500 dot 0.2) = 125s $
+
+und den Anfahrweg
+$ s_A = 1/2 a_A t^2_A = 1/2 dot o.2 dot 125^2 = 1563m $
+
+Beim Bremsen mit konstanter Verzögerung $a_B$ gilt für die Geschwindigkeit
+$ v_B = v_"max" + a_B t $
+
+Die Zeit $t_B$ bis zum Stillstand ($v_B = 0$) ist wird daher
+$ t_B = - v_"max" / a_B = frac(90 dot 1000, 3600 dot (-0.6)) = 41.67s $
+
+und der zugehörige Bremsweg ergibt sich zu
+$ s_B = v_"max" t_B + 1/2 a_B t^2_B = frac(90 dot 1000, 3600) dot 41.67 - 1/2 dot 0.6 dot 41.67^2  $
+$ s_B = 521m $
+
+Für die Fahrt mit konstanter Geschwindigkeit $v_"max"$ bleibt dann ein Weg von
+$ s^* = 3000 - s_A - s_B = 916m $
+
+Hierzu gehört eine Zeit
+$ t^* = s^* / v_"max" = frac(916 dot 3600, 90 dot 1000) = 36.64s $
+
+Die Gesamtfahrzeit wird damit
+$ T = t_A + t^* + t_B = 203.31s $
+
+#subsubsection("Bremsen")
+Ein PKW-Fahrer nähert sich mit einer Geschwindigkeit von $v_0 = 50 frac(k m, h)$ einer Ampel. Sie sprint aufu rot, wenn er noch $l = 100m$ entfernt ist. Die Rot- und Gelbphase dauert $t^* = 10s$. Der Fahere möchte diei Ampel gerade noch passieren, wenn sie weider auf grün wechselt. \
+
+Bei konstanter Beschleunigung $a_0$ gilt 
+$ v = v_0 + a_0 t $
+$ x = v_0 t + a_0 t^2 / 2 $
+
+a) Mit welcher konstanten Beschleunigung $a_0$ muss der Fahrer bremsen? \
+Aus der Bedingung $x(t^*) = l$ folgt
+$ a_0 = 2 / t^(*2) (l - v_0 t^*) = 2/10^2 (100 - frac(50 dot 1000, 3600) dot 10) = -0.78 m/s^2 $
+
+b) Welche Geschwindigkeit $v_1$ hat er auf der Höhe der Ampel? \
+Mit der nun bekannten Bremsverzöerung ergibt sich aus der ersten Gleichung
+$ v_1 = v(t^*) = 50 dot 1000 / 3600 - 0.78 dot 10 = 6.09 m/s $
+
 #subsection("Würfe")
 #subsubsection("Schiefer Wurf mit Basketball")
 #align(center, image("../figures/exercise/basketballwurf.png", width: 75%))
