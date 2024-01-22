@@ -1,8 +1,7 @@
 #import "../utils.typ": *
 
 #section("Examples")
-#subsection("Kräfte")
-#subsubsection("Gewicht am Seil")
+#subsubsection("Seilkräfte finden")
 #align(center, image("../figures/exercise/gewichtKräfte.png", width: 75%))
 Ein (masseloses) Seil ist an den Punkten A und B an zwei gegenüberliegenden Wänden befestigt, wobei die Wände im Abstand $a = 2m$ stehen. Der Befestigungspunkt A befindet sich $1m$ unterhalb vom Befestigungspunkt B. Eine Masse $m_G = 20 k g$ werde an das Seil gehängt (wobei sich die Masse entlang des Seils bewegen kann). Die beiden Seilenden haben
 einen Winkel von $alpha = 30°$ zum Lot hin. \
@@ -30,7 +29,7 @@ x und y nach $l_a$ und $l_b$ im TR auflösen:
 $ l_A = 1.422m $
 $ l_B = 2.577m $
 
-#subsection("Drehmoment")
+#subsubsection("Kraft auf Kranarm")
 #align(center, image("../figures/exercise/kran.png", width: 75%))
 Ein Kran hebt einen Stein der Masse $G = 150k g$ wie in der Skizze dargestellt. Der Kranarm ist an Punkt A drehbar gelagert und das Seil ist in Punkt B um eine Umlenkrolle geschleift und am Kranarm fest verbunden. \
 Berechnen sie die Kraft, mit welcher das Kranlager an Punkt A auf den Kranarm wirkt, wenn das System im Gleichgewicht ist.
@@ -45,8 +44,7 @@ $ 3 dot 150 k g dot 9.81 dot cos(30) - 1 dot F_S - 2 dot F_S dot cos (30) = 0 $
 $ -F_S dot sin(30) - F_S dot sin(60) + F_"Ax" = 0 $
 $ F_S dot cos(30) + F_S dot cos(60) + A_"Ay" - 150 k g dot 9.81 = 0 $
 
-#subsection("Geschwindigkeit")
-#subsubsection("Tuch wegziehen")
+#subsubsection("Ruckartige Bewegung")
 Auf einem Tisch steht eine Blumenvase. Wir wollen das Tischtuch wegziehen, ohne dass die Vase herunterfällt. \
 Das Tuch wird ruckartig auf eine konstante Geschwindigkeit $v_0$ beschleunigt (die für die Beschleunigung benötigte Zeit wird vernachlässigt) und wird dann mit dieser konstanten Geschwindigkeit auf einer Strecke von $60c m$ bewegt. Die Gleitreibung zwischen Vase und Tischtuch hat den Wert $µ_G = 0.3$. Wie schnell muss daS Tuch bewegt werden, damit sich die Vase in der gleichen Zeit höchstens $5c m$ bewegt? \
 
@@ -62,7 +60,7 @@ $ t = S_T / v_0 S_V = a_v / 2 dot t^2 $
 $ t = 0.6 / v_0 0.05 = frac(0.3 dot 9.81, 2) dot t^2 $
 $ v = 3.25 m/s $
 
-#subsubsection("Autobahn")
+#subsubsection("Mindestabstand Fahrzeug")
 Auf einer Autobahn fährt ein Fahrzeug A mit konstanter Geschwindigkeit $v_"A0" = 110 frac(k m, h)$. In die Autobahn fährt ein Fahrzeug B ein. Zum Zeitpunkt des Einfahren ($t = 0$) hat Fahrzeug B eine Geschwindigkeit $v_"B0" = 110 frac(k m, h)$ und einen Abstand von Fahrzeug A von $d = 200m$. Welche (konstant angenommene) Beschleunigung aB muss Fahrzeug B haben, wenn ein Mindestabstand der beiden von $d_"min" = 40m$ eingehalten werden soll? \
 
 Überlegung: Der Mindestabstand muss eingehalten werden, wenn beide Fahrzeuge gleich schnell sind. Dieser Mindestabstand muss zum Zeitpunkt $t x$ erreicht sein. Falls A langsamer ist als B, dann vergrössert sich der Abstand, umgekehrt verringert sich der Abstand. \
@@ -80,8 +78,21 @@ $ d_min = a_B / 2 dot t^2_x + v_"B0" dot t_x +d - v_"A0" dot t_x $
 $ t_x = 28.8 $
 $ a_B = 0.39 $
 
-#subsection("Bewegung")
-#subsubsection("U-Bahn")
+#subsubsection("Reh überfahren")
+Ein Bus fährt mit $60 k m/h$ auf einer geraden Strecke durch den Wald. Plötzlich tritt ein Reh auf die Strasse und der Fahrer beginnt $27 m$ vor dem Hindernis mit einer Vollbremsung. Es reicht gerade bis zum Stillstand $4 m$ vor dem erstarrten Reh.
+
+Mit welcher Geschwindigkeit würde er auf das Reh prallen, wenn er erst $22 m$ vor dem Hindernis die Vollbremsung eingeleitet hätte.
+
+Verzögerung berechnen:
+$ x_1 = 27m - 4m = 23m $
+$ x_1 = frac(v^2_0, 2 a) $
+$ a = frac(v^2_0, 2 x_1) = 6.04 m/s^2 $
+
+$ x_2 = frac(v^2_0 - v^2_1, 2 a)  $
+$ v_1 => sqrt(v^2_0 - 2 a x_2) $
+$ v_1 = 3.47 m/s = 12.5 frac(k m, h) $
+
+#subsubsection("U-Bahn Beschleunigung")
 Eine U-Bahn legt zwischen 2 Stationen einen Weg von $3k m$ zurück. Aus der Anfahrbeschleunigung $a_A = - 0.6 m/s^2$ und der Höchstgeschwindigkeit $v_"max" = 90 frac(k m, h)$ soll der Anfahrweg, Bremsweg, Wegstrecker der gleichförmigen Bewegung und die Fahrzeit ermittelt werden. \
 
 Aus der konstanten Beschleunigung $a_A$ folgt beim Anfahren ein Geschwindigkeitsverlauf
@@ -112,7 +123,7 @@ $ t^* = s^* / v_"max" = frac(916 dot 3600, 90 dot 1000) = 36.64s $
 Die Gesamtfahrzeit wird damit
 $ T = t_A + t^* + t_B = 203.31s $
 
-#subsubsection("Bremsen")
+#subsubsection("Bremsen vor Ampel")
 Ein PKW-Fahrer nähert sich mit einer Geschwindigkeit von $v_0 = 50 frac(k m, h)$ einer Ampel. Sie sprint aufu rot, wenn er noch $l = 100m$ entfernt ist. Die Rot- und Gelbphase dauert $t^* = 10s$. Der Fahere möchte diei Ampel gerade noch passieren, wenn sie weider auf grün wechselt. \
 
 Bei konstanter Beschleunigung $a_0$ gilt 
@@ -127,7 +138,6 @@ b) Welche Geschwindigkeit $v_1$ hat er auf der Höhe der Ampel? \
 Mit der nun bekannten Bremsverzöerung ergibt sich aus der ersten Gleichung
 $ v_1 = v(t^*) = 50 dot 1000 / 3600 - 0.78 dot 10 = 6.09 m/s $
 
-#subsection("Würfe")
 #subsubsection("Schiefer Wurf mit Basketball")
 #align(center, image("../figures/exercise/basketballwurf.png", width: 75%))
 Ein Basketball mit $30c m$ Durchmesser soll in einem Abwurfwinkel von $70°$ zur Horizontalen direkt in den Basketball-Korb geworfen werden aus einer Höhe von $2.1m$ (Ballmittelpunkt). Die Mitte des Korbrings von 35cm Durchmesser befindet sich in einer Distanz von $2.7m$ und in $3.2m$ Höhe.
@@ -160,7 +170,7 @@ d) In welcher Distanz und Höhe relativ zur Abwurfstelle befindet sich der Ball 
 $ x(1.1) = 6.95 dot cos(70) dot 1.1 = 2.7m $
 $ y(1.1) = -1/2 g dot 1.1^2 + 6.95 dot sin(70) dot 1.1 = 1.1m $
 
-#subsubsection("Schiefer Wurf mit Schlauch")
+#subsubsection("Schiefer Gartenschlauch")
 Ein Schlauch wird so gehalten, dass ein kollimierter Wasserstrahl mit $15m/s$ unter $55°$ gegenüber der Horizontalen nach oben spritzt. In $7.0m$ Entfernung befindet sich eine Wand.
 
 $ a_x = 0 $
@@ -189,8 +199,7 @@ c) Wie weit (auf der Höhe der Düse) und wie hoch würde das Wasser ohne Wand s
 $ d = v^2_0 / g dot sin(2 dot phi) = 21.55 m $
 $ h_max = frac(v^2_0, 2 dot g) dot sin(phi)^2 = 7.6m $
 
-#subsection("Trägheitsmoment")
-#subsubsection("Herabrollen Stahlkugel")
+#subsubsection("Konstante Beschleunigung einer Stahlkugel")
 Wie lange braucht eine homogene Stahlkugel zum Herabrollen auf einer $1m$ langen, schiefen Ebene mit einem Steigungswinkel von $phi = 30°$? Die Bewegung beginne aus dem Stillstand und Kugel rollt ohne zu gleiten. Die Kugel erfährt eine konstante Beschleunigung. \
 Energiebilanz:
 $ m dot g dot h = frac(m dot v^2, 2) + frac(J dot omega^2, 2) $
@@ -204,6 +213,42 @@ $ m dot g dot h = 1/2 dot m dot v^2 + 1/2 dot 2/5 dot m dot R^2 dot (V/R)^2 $
 $ m dot g dot h = m dot v^2(1/2 dot 2/5) $
 $ m dot g dot h = frac(7 dot m dot v^2, 10) $
 $ g dot h = frac(7 dot v^2, 10) $
+
+#subsubsection("Bowlingkugel")
+Eine Bowlingkugel der Masse $2.7 k g$ und mit dem Durchmesser $22c m$ wird so geworfen, dass sie sich nach dem Auftreffen auf der Bahn, ohne zu rotieren mit einer Geschwindigkeit von $8.5m/s$ bewegt. Die Gleitreibungszahl zwischen Kugel und Bahn beträgt $0.3$.
+a) Wie gross ist die lineare Beschleunigung (infolge Reibung)? \
+In Y-Richtung wirkt sowohl die Gewichtskraft als auch die Normalkraft. Beide kompensieren sich. In X-Richtung ist nur die Reibung entgegen der Bewegungsrichtung
+wirksam, die durch die Normalkraft ausgedrükt wird:
+$ F_G = F_N $
+$ F_R = - mu F_N $
+
+Mit dem zweiten Newtonschen Axiom ergibt sich:
+$ F_"res" = m a $
+$ F_"res" = F_R $
+$ F_"res" = - mu m g $
+$ a = - mu g $
+
+c) Wie gross ist die Winkelbeschleunigung der Kugel während des Gleitens? \
+Die Winkelbeschleunigung α erhalten wir aus der Grundgleichung der Rotation (bzgl. Schwerpunkt)
+$ J_a = M_"res" $
+$ a = M_"res"/J $
+$ a = frac(mu m g R, J) $
+$ a = frac(mu m g R, 2/5 m R^2) $
+$ a = frac(5 mu g, 2 R) $
+$ a = frac(5 mu dot 9.81 m/s^2, 20.11m) $
+$ a = 66.89 "rad"/s^2 $
+
+d) Wie lange gleitet die Kugel, bevor sie zu einer reinen Rollbewegung übergeht? (Hinweis: Die Schwerpunktsgeschwindigkeit muss hier der Tangentialgeschwindigkeit
+entsprechen.) \
+Wenn die Kugel aufhört zu gleiten, gilt die Rollbedingung: $v = R omega$:
+$ v = R dot omega $
+$ v_0 - a dot t = R dot a dot t $
+$ = frac(5 mu g t, 2) $
+$ v_0 = frac(5 mu g t, 2) + mu g dot t $
+$ = (7/2 mu g) dot t $
+$ t = frac(2 v_0, 7 mu g) $
+$ = frac(2 dot 8.5 m/s, 7 dot 0.3 dot 9.81 m/s^2) $
+$ = 0.83s $
 
 #subsubsection("Drehmoment Seiltrommel")
 An einer Seiltrommel mit einem Durchmesser von $29c m$ und einem Massenträgheitsmoment von $3.3k g m^2$ hängt eine Masse von $70k g$. Welches Drehmoment muss der Motor an der Seiltrommel aufbringen, damit die Last mit einer Beschleunigung von $2 m/s^2$ aufgehoben wird? \
@@ -220,8 +265,8 @@ Es kann auch sein, dass gefragt wird nach der Kraft, welche auf dem Seil wirkt. 
 $ F_"res" = m dot g - s = m dot a $
 $ M_"res" = r dot s = J dot a / r $
 
-#subsubsection("Raumkapsel")
-Eine Raumkapsel mit starr befestigten Sonnensegeln soll ausgerichtet werden. Dazu muss sie um den Winkel $phi = 180+°$ um ihre Längsachse gedreht werden. Dazu wird ein Elektromotor - dessen Drehachse parallel zur Längsachse des Raumschiffs ausgerichtet wird, eingeschaltet. \
+#subsubsection("Winkelgeschwindigkeit Raumkapsel")
+Eine Raumkapsel mit starr befestigten Sonnensegeln soll ausgerichtet werden. Dazu muss sie um den Winkel $phi = 180°$ um ihre Längsachse gedreht werden. Dazu wird ein Elektromotor - dessen Drehachse parallel zur Längsachse des Raumschiffs ausgerichtet wird, eingeschaltet. \
 
 Das axiale Massenträgheitsmoment des Rotors des Elektromotors ist $J_M = 0.2k g dot m^2$. \
 

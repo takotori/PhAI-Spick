@@ -225,7 +225,7 @@ $ x(t) = v_0 t $
 
 $ a_y(t) = -g = "konstant" $
 $ v_y(t) = -g t + underbrace(v_0, 0) $
-$ x(t) = frac(1, 2)g t^2 + y_0 $
+$ x(t) = -frac(1, 2)g t^2 + y_0 $
 
 #bold("Wurfhöhe:") \
 $v_0$ = Anfangsgeschwindigkeit \

@@ -114,16 +114,13 @@ $ v_"rel" = |v_1 - v_2| $
 #bold("Reduzierte Masse") $mu$: \
 $ mu = frac(m_1 m_2, m_1 + m_2) $
 
-#bold("Deformationsarbeit") $Q$: \
+#bold("Deformationsarbeit") $Q$ #bold("in") $J$: \
 $ Q = frac(m_1 m_2, 2(m_1 + m_2)) (v_1 - v_2)^2 $
 oder vereinfacht:
 $ Q = frac(mu dot v^2_"rel", m_1 + m_2) $
 
-$ arrow(O) = frac(1, m_1 + m_2) (m_1 dot(arrow(r_1)) + m_2 dot(arrow(r_2))) $ // what this
-$ arrow(O) = m_1 arrow(v_1) + m_2 arrow(v_2) = arrow(P)_"tot" $ // what this
-
 #bold("Impulssatz:") \ // what this
-$ arrow(P)_"tot" = arrow(P)_"tot" <=> m_1 v_1 + m_2 v_2 = m_1 v'_1 + m_2 v'_2 $
+$ arrow(P)_"tot" = arrow(P)_"tot" <=> m_1 v_1 + m_2 v_2 => m_1 v' + m_2 v' = v' (m_1 + m_2) $
 
 #bold("Energiesatz total elastisch:") \ // what this
 $ E_"kin" = 1 / 2 m_1 v_1^2 + 1 / 2 m_2 v_2^2 = 1 / 2 m_1 v'_1^2 + 1 / 2 m_2 v'_2^2 $
