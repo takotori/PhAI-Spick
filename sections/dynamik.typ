@@ -46,6 +46,7 @@ $m$ = Masse \
 $v$ = Geschwindigkeit \
 $ E_"kin" = m / 2 dot v^2 $
 
+#colbreak()
 #bold("Totale Energie") $E_"tot"$: \
 $ E_"tot" = E_"pot" + E_"kin" $
 
@@ -309,3 +310,71 @@ $L = J dot omega $ = Totaler Drehimpuls \
 $beta$ = Kegelwinkel der Präzession \
 
 $ L_r = L dot sin(beta) = J dot omega dot sin(beta) $
+
+#colbreak()
+#subsection("Translation vs Rotation")
+#subsubsection("Drehbewegung")
+$triangle.stroked.t theta$ = Drehwinkel \
+$M$ = Drehmoment \
+$l$ = Trägheitsmoment \
+
+#bold("Winkelgeschwindigkeit") $omega$: \
+$ omega = frac(d theta, d t) $
+
+#bold("Winkelbeschleunigung") $alpha$: \
+$ alpha = frac(d omega, d t) = frac(d^2 theta, d t^2) $
+
+#bold("Gleichungen für den Fall konstanter Winkelbeschleunigung"): \
+$ omega = omega_0 + alpha t $
+$ triangle.stroked.t theta = <omega> triangle.stroked.t t $
+$ <omega> = 1/2 (omega_0 + omega) $
+$ theta = theta_0 + omega_0 t + 1/2 alpha t^2 $
+$ omega^2 = omega^2_0 + 2 a triangle.stroked.t theta $
+
+#bold("Arbeit"): \
+$ d W = M dot d theta $
+
+#bold("Kinetische Energie"): \
+$ E_"kin" = 1/2 dot l dot omega^2 $
+
+#bold("Leistung"): \
+$ P = M dot omega $
+
+#bold("Drehimpuls"): \
+$ L = l dot omega $
+
+#bold("Zweites Newton'sches Axiom"): \
+$ M = l dot alpha = frac(d L, d t) $
+
+#subsubsection("Lineare Bewegung")
+$triangle.stroked.t x$ = Verschiebung \
+$F$ = Kraft \
+$m$ = Masse \
+
+#bold("Geschwindigkeit"): \
+$ v = frac(d x, d t) $
+
+#bold("Beschleunigung"): \
+$ a = frac(d v, d t) = frac(d^2 x, d t^2) $
+
+#bold("Gleichungen für den Fall konstanter Beschleunigung"): \
+$ v = v_0 + a t $
+$ triangle.stroked.t x = <v> triangle.stroked.t t $
+$ <v> = 1/2 (v_0 + v) $
+$ x = x_0 + v_0 t + 1/2 a t^2 $
+$ v^2 = v^2_0 + 2 a triangle.stroked.t x $
+
+#bold("Arbeit"): \
+$ d W = F dot d s $
+
+#bold("Kinetische Energie"): \
+$ E_"kin" = 1/2 dot m dot v^2 $
+
+#bold("Leistung"): \
+$ P = F dot v $
+
+#bold("Impuls"): \
+$ p = m dot v $
+
+#bold("Zweites Newton'sches Axiom"): \
+$ F_"ext" = m dot a = frac(d p, d t) $

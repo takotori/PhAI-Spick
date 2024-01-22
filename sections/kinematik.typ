@@ -38,6 +38,7 @@ $ s = v dot t $
 $ v = frac(s, t) $
 $ t = frac(s, v) $
 
+#colbreak()
 #subsubsection("Gleichmässig beschleunigte Bewegung")
 a = Beschleunigung ($frac(m,s^2)$) \
 v = Geschwindigkeit ($frac(m,s)$) \
@@ -107,6 +108,7 @@ $ a_"tangential" = 0 $
 $ v_"tangential"(t) = v_0 = "konstant" $
 $ s(t) = v_0 t + s_0 $
 
+#colbreak()
 #subsubsection("Gleichmässig beschleunigte Bewegung")
 $ a_"tangential" = a_0 eq.not 0 $
 $ v(t) = a_0 t + v_0  $
@@ -121,7 +123,7 @@ $ arrow(P) = mat(x; y) = underbrace(mat(r dot cos(phi); r dot sin(phi)), "Polar 
 #bold("Polarkoordinaten:") \
 $ arrow(P) = mat(r; phi) = underbrace(mat(|sqrt(x^2 + y^2)|; tan(y / x)), "Kartesisch -> Polar") $
 
-#image("../figures/koordinatensystem.png", width: 80%)
+#image("../figures/koordinatensystem.png", width: 75%)
 
 #subsubsection("Winkelgeschwindigkeit")
 $T$ = Periode (Zeit pro Umdrehung) \
@@ -223,7 +225,7 @@ $ x(t) = v_0 t $
 
 $ a_y(t) = -g = "konstant" $
 $ v_y(t) = -g t + underbrace(v_0, 0) $
-$ x(t) = frac(1, 2)g t + y_0 $
+$ x(t) = frac(1, 2)g t^2 + y_0 $
 
 #bold("Wurfhöhe:") \
 $v_0$ = Anfangsgeschwindigkeit \

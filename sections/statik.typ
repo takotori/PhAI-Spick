@@ -35,8 +35,9 @@ $mu_H$ = Haftreibungskoeffizient \
 
 $ F_R = mu_H dot F_N $
 
-#image("../figures/reibung.png")
+#image("../figures/reibung.png", width: 75%)
 
+#colbreak()
 #subsection("Drehmoment")
 Linke Hand Regel (Schraubenzieher): \ // todo
 
@@ -76,6 +77,7 @@ $ triangle.stroked.t l = l F / A $
 #bold("Dehnung") $epsilon$: \
 $ epsilon = frac(triangle.stroked.t l, l) $
 
+#colbreak()
 #bold("Schubspannung") $tau$: \
 $ tau := frac(F_∥, A) $
 
@@ -117,7 +119,8 @@ $ M = c dot phi $
 
 #bold("Federkonstante:") \
 $ c = frac(pi G r^4, 2l) $
- 
+
+#colbreak()
 #bold("Bei M konstant:") \
 $ l arrow.r 2l => phi arrow.r 2 phi $ 
 $ r arrow.r 2r => phi arrow.r phi / 16 $ 
