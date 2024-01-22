@@ -92,6 +92,29 @@ $ x_2 = frac(v^2_0 - v^2_1, 2 a)  $
 $ v_1 => sqrt(v^2_0 - 2 a x_2) $
 $ v_1 = 3.47 m/s = 12.5 frac(k m, h) $
 
+#subsubsection("Vollbremse")
+Ein Auto fährt im Nebel mit $36 k m/h$. Plötzlich taucht ein Hindernis auf und er beginnt $15 m$
+vor dem Hindernis mit einer Vollbremsung. Es reicht gerade bis zum Stillstand $0m$ vor der
+Wand.
+
+Mit welcher Geschwindigkeit würde er auf das Hindernis prallen, wenn er eine höhere Ge-
+schwindigkeit von $45 k m/h$ gehabt hätte, dafür aber bereits $18 m$ vor der Wand die Vollbremsung
+eingeleitet hätte.
+
+Beschleunigung $a$ berechnen: \
+$ x_1 = frac(v^2_1, 2 a) => a = frac(v^2_1, 2 x_1) $
+$ a = frac(10^2, 2 dot 15) = 3.33 m/s  $
+
+Zeit für Bremsung: \
+$ x_2 = - 1/2 a t^2 + v_20 dot t $
+$ x_2 = - 3.33/2 dot t^2 + 12.5 dot t = 18m $
+$ t = 1.944s $
+
+Aufprallgeschwindigkeit: \
+$ v_2 = v_20 - a dot t $
+$ v_2 = 12.5 - 3.33 dot 1.944 $
+$ v_2 = 6.02 m/s $
+
 #subsubsection("U-Bahn Beschleunigung")
 Eine U-Bahn legt zwischen 2 Stationen einen Weg von $3k m$ zurück. Aus der Anfahrbeschleunigung $a_A = - 0.6 m/s^2$ und der Höchstgeschwindigkeit $v_"max" = 90 frac(k m, h)$ soll der Anfahrweg, Bremsweg, Wegstrecker der gleichförmigen Bewegung und die Fahrzeit ermittelt werden. \
 
