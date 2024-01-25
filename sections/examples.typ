@@ -76,6 +76,31 @@ c) Wie gross ist der Haftreibungskoeffizient $mu_H$ zwischen Stab und Fläche?
 $ F_R = mu dot F_N $
 $ mu_"HW" = F_"RW" / F_"NW" = 1.277 $
 
+#subsubsection("Tram")
+Eine 2-achsige, alte Lokomotive von $4.73T$ kann bei 79-Promille Steigung (79m vertikal auf 1000m horizontal) auf den Uetliberg mit $0.32 m/s^2$ beschleunigen, ohne dass die Räder durchdrehen. Der Schwerpunkt der Lokomotive befindet sich $1.18m$ hinter der vorderen Triebachse und $2.6m$ vor der hinteren Laufachse in einer Höhe von $2.15m$ über dem Geleise. Der Rollreibungskoeffizient beträgt $0.0015$. Wie gross muss der Haftreibungskoeffizient mindestens sein?
+#image("../figures/exercise/tram.png")
+$ x: F_H - F_"RL" - F_"RT" - F_G dot sin(a) = m dot a $
+$ y: F_"NL" + F_"NT" - F_G dot cos(a) = 0 $
+$ M: F_G dot (s_2 dot cos(a) + h dot sin(a)) + m dot a dot h = F_"NL" dot (s_1 + s_2) $
+
+a) Berechnen Sie die Gewichtskraft $F_G$ der Lokomotive \
+$ F_G = m dot g = 46401.3N $
+
+b) Berechnen Sie die Kraft $F_"NL"$ mit der die Laufachse auf die Schiene drückt \
+Aus Drehmomentgleichung: \
+$ F_"NL" = frac(F_G dot (1.18m dot cos(a) + 2.15m dot sin(a)) + m dot a dot 2.15m, 2.6m + 1.18m) $
+$ F_"NL" = 17379.5N $
+
+c) Berechnen Sie die Kraft $F_"NT"$ mit der die Triebachse auf die Schiene drückt \
+Aus y-Richtung der Kraft nach $F_"NT"$ auflösen: \
+$ F_"NT" = F_G dot cos(a) - F_"NL" = 28877.7N $
+
+d) Berechnen Sie den minimalen Haftreibungskoeffizienten ”Rad-Schiene” \
+Aus x-Richtung der Kraft nach $mu_H$ (steckt in $F_H$) auflösen:
+$ m dot a = mu_H dot F_"NT" - mu_R dot F_"NL" - mu_R dot F_"NT" - F_G dot sin(a) $
+$ mu_H = frac(m dot a + mu_R dot F_"NL" + mu_R dot F_"NT" + F_G dot sin(a), F_"NT") $
+$ mu_H = 0.1814 $
+
 #subsubsection("Ruckartige Bewegung")
 Auf einem Tisch steht eine Blumenvase. Wir wollen das Tischtuch wegziehen, ohne dass die Vase herunterfällt. \
 Das Tuch wird ruckartig auf eine konstante Geschwindigkeit $v_0$ beschleunigt (die für die Beschleunigung benötigte Zeit wird vernachlässigt) und wird dann mit dieser konstanten Geschwindigkeit auf einer Strecke von $60c m$ bewegt. Die Gleitreibung zwischen Vase und Tischtuch hat den Wert $µ_G = 0.3$. Wie schnell muss daS Tuch bewegt werden, damit sich die Vase in der gleichen Zeit höchstens $5c m$ bewegt? \
