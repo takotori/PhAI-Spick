@@ -44,6 +44,38 @@ $ 3 dot 150 k g dot 9.81 dot cos(30) - 1 dot F_S - 2 dot F_S dot cos (30) = 0 $
 $ -F_S dot sin(30) - F_S dot sin(60) + F_"Ax" = 0 $
 $ F_S dot cos(30) + F_S dot cos(60) + A_"Ay" - 150 k g dot 9.81 = 0 $
 
+#subsubsection("Kraft auf Stab")
+Ein dünner Stab der Länge $L = 23.95c m$ mit der Masse $m = 493 g$ liegt lose in einem Schlitz. Die Höhe des Schlitzes wird langsam vergrössert. Im Moment, wo der Stab zu rutschen beginnt ist die Höhe $H = 4.97c m$ und der Stab in einem Winkel $a = 31.4°$ zur Horizontalen. Der
+Haftreibungskoeffizient $mu_"HK"$ zwischen Stab und Kante beträgt $0.41$.
+
+a) Skizzieren und berechnen Sie alle auftretenden Kräfte
+#image("../figures/exercise/schlitz.png")
+$ x: -F_"RW" - cos(58.6) dot F_"RK" + cos(a) dot F_"NK" = 0 $
+$ y: underbrace(-g dot m, F_G) - F_"NW" + sin(a) dot F_"RK" + sin(58.6) dot F_"NK" = 0  $
+
+#image("../figures/exercise/schlitzDreh.png")
+$ M: L / 2 cos(a) dot F_G - F_"NK" dot H / sin(a) = 0  $
+
+Gewichtskraft des Stabs: \
+$ F_G = m dot g = 4.83 N $
+
+Aus der Drehmomentengleichugn können die Kantenkräfte berechnet werden: \
+$ F_"NK" = frac(l/2 cos(a) dot F_G, H / sin(a)) = frac(l/2 cos(a) dot sin(a) dot F_G, H) = 5.182 N $
+$ F_"RK" = mu_"HK" dot F_"NK" = 2.125N $
+
+Aus der Gl. für die x-Richtung: \
+$ F_"RW" = - cos(58.6) dot F_"RK" + cos(a) dot F_"NK" = 0.886N $
+
+Aus der Gl. für die y-Richtung: \
+$ F_"NW" = underbrace(-g dot m, F_G) + sin(a) dot F_"RK" + sin(58.6) dot F_"NK" = 0.694N $
+
+b) Warum ist es am optimalsten, den Berührungspunkt des Stabs mit der oberen Fläche als Bezugspunkt für die Drehmomente zu wählen? \
+Die meisten Kräfte verschwinden mit diesem Bezugspunkt. Die Berechnung wird somit einfacher.
+
+c) Wie gross ist der Haftreibungskoeffizient $mu_H$ zwischen Stab und Fläche? 
+$ F_R = mu dot F_N $
+$ mu_"HW" = F_"RW" / F_"NW" = 1.277 $
+
 #subsubsection("Ruckartige Bewegung")
 Auf einem Tisch steht eine Blumenvase. Wir wollen das Tischtuch wegziehen, ohne dass die Vase herunterfällt. \
 Das Tuch wird ruckartig auf eine konstante Geschwindigkeit $v_0$ beschleunigt (die für die Beschleunigung benötigte Zeit wird vernachlässigt) und wird dann mit dieser konstanten Geschwindigkeit auf einer Strecke von $60c m$ bewegt. Die Gleitreibung zwischen Vase und Tischtuch hat den Wert $µ_G = 0.3$. Wie schnell muss daS Tuch bewegt werden, damit sich die Vase in der gleichen Zeit höchstens $5c m$ bewegt? \
