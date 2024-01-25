@@ -12,4 +12,4 @@
 #pagebreak()
 #include "sections/examples.typ"
 
-// #image("figures/meme.png", width: 75%)
+#image("figures/meme.png", width: 75%)
