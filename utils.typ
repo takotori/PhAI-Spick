@@ -17,7 +17,3 @@
   align(center, [#heading(numbering: "1.1.1.", level: 4, name)])
   line(length: 100%)
 }
-
-#let bold(title) = {
-  text(weight: "bold", title)
-}

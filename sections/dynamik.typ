@@ -2,7 +2,7 @@
 
 #section("Dynamik")
 
-#bold("Gewichtskraft:") \
+*Gewichtskraft:* \
 $F_G$ = Kraft \
 $m$ = Masse \
 $ F_G = m dot g $
@@ -12,13 +12,13 @@ $mu_"Gleit"$ = Gleitreibungskoeffizient \
 $mu_"Roll"$ = Rollreibungskoeffizient \
 $F_N$ = Normalkraft \
 
-#bold("Gleitreibung: ") \
+*Gleitreibung:* \
 $ F_"Gleit, R" = mu_"Gleit" dot F_N $
 
-#bold("Rollreibung:") \
+*Rollreibung:* \
 $ F_"Roll, R" = mu_"Roll" dot F_N $
 
-#bold("Rollreibungslänge") $e$: \
+*Rollreibungslänge* $e$: \
 $ e = frac(r dot F_"Reibung", F_N) = r dot mu_R $
 
 #subsection("Arbeit und Energie")
@@ -26,56 +26,56 @@ $ e = frac(r dot F_"Reibung", F_N) = r dot mu_R $
 Einheit von $W: 1J = 1 N m$ \
 s = Strecke \
 
-#bold("Arbeit") $W$: \
+*Arbeit* $W$: \
 $ W = F_s dot s $
 $ W = integral_A^B arrow(F) dot d arrow(s) $
 
-#bold("Potentielle Energie") $E_"pot"$: \
+*Potentielle Energie* $E_"pot"$: \
 $m$ = Masse \
 $h$ = Höhe ab Referenz \
 
 $ E_"pot" = F_G dot h = underbrace(m dot g, F_G) dot h $
 
-#bold("Elastische Energie") $E_"ela"$: \
+*Elastische Energie* $E_"ela"$: \
 k = Federkonstante \
 x = Verschiebung
 $ E_"ela" = 1 / 2 k x_0^2 $
 
-#bold("Kinetische Energie") $E_"kin"$: \
+*Kinetische Energie* $E_"kin"$: \
 $m$ = Masse \
 $v$ = Geschwindigkeit \
 $ E_"kin" = m / 2 dot v^2 $
 
 #colbreak()
-#bold("Totale Energie") $E_"tot"$: \
+*Totale Energie* $E_"tot"$: \
 $ E_"tot" = E_"pot" + E_"kin" $
 
-#bold("Verschiebungsarbeit:") \ // what this
+*Verschiebungsarbeit (what this):* \
 $ W = F dot s = (m dot a) dot (1 / 2 a t^2) = 1 / 2 m v^2 $
 
-#bold("Energieerhaltungssatz:") \ // what this
+*Energieerhaltungssatz (what this):* \
 $ W = F_G dot h = m g h = m g 1 / 2 g t^2 = 1 / 2 m v^2 = E_"kin" $
 
 #subsection("Leitung / Wirkungsgrad")
 Einheit von $P: 1W = 1 J/s$ \
-#bold("Leistung") $P$: \
+*Leistung* $P$: \
 $ P = frac(triangle.stroked.t W, triangle.stroked.t t) = frac(F dot triangle.stroked.t s, triangle.stroked.t t) = arrow(F) dot arrow(v) $
 
-#bold("Watt") $W$: \
+*Watt* $W$: \
 $ 1 W = 1 J / s $
 
-#bold("Wirkungsgrad") $eta$: \
+*Wirkungsgrad* $eta$: \
 $P_"ab"$ = Abgeführte Leistung \
 $P_"zu"$ Zugeführte Leistung \
 $ eta = frac(P_"ab", P_"zu") $
 
 #subsection("Impuls / Impulserhaltung")
-#bold("Impuls") $arrow(p)$: \
+*Impuls* $arrow(p)$: \
 m = Masse \
 v = Geschwindigkeit \
 $ arrow(p) = m dot arrow(v) $
 
-#bold("2. Newtonsches Gesetz umschreiben:") \
+*2. Newtonsches Gesetz umschreiben:* \
 $ arrow(F) = m dot arrow(a) = m dot frac(d arrow(v), d t) = frac(d, d t) (m dot arrow(v)) = frac(d, d t) arrow(p) $
 
 #subsection("Stösse")
@@ -108,33 +108,32 @@ $m_1$ = Masse von Körper 1 \
 $m_2$ = Masse von Körper 2 \
 $mu$ = Reduzierte Masse \
 
-#bold("Relativgeschwindigkeit") $v_"rel"$:
+*Relativgeschwindigkeit* $v_"rel"$:
 $ v_"rel" = |v_1 - v_2| $
 
-#bold("Reduzierte Masse") $mu$: \
+*Reduzierte Masse* $mu$: \
 $ mu = frac(m_1 m_2, m_1 + m_2) $
 
-#bold("Deformationsarbeit") $Q$ #bold("in") $J$: \
+*Deformationsarbeit* $Q$ *in* $J$: \
 $ Q = frac(m_1 m_2, 2(m_1 + m_2)) (v_1 - v_2)^2 $
 oder vereinfacht:
 $ Q = frac(mu dot v^2_"rel", m_1 + m_2) $
 
-#bold("Impulssatz:") \ // what this
+*Impulssatz (what this):* \
 $ arrow(P)_"tot" = arrow(P)_"tot" <=> m_1 v_1 + m_2 v_2 => m_1 v' + m_2 v' = v' (m_1 + m_2) $
 
-#bold("Energiesatz total elastisch:") \ // what this
+*Energiesatz total elastisch (what this):* \ 
 $ E_"kin" = 1 / 2 m_1 v_1^2 + 1 / 2 m_2 v_2^2 = 1 / 2 m_1 v'_1^2 + 1 / 2 m_2 v'_2^2 $
-
 
 #subsection("Rakete")
 
-#bold("Endgeschwindigkeit in Erdferne") ($g = 0$): \
+*Endgeschwindigkeit in Erdferne* ($g = 0$): \
 u = Ausstoßgeschwindigkeit \
 m = Verbleibende Masse \
 
 $ v_m = u dot ln(m_0 / m) + v_0$
 
-#bold("Geschwindigkeit nach Flugzeit t in Erdnähe") ($g eq.not 0$):
+*Geschwindigkeit nach Flugzeit t in Erdnähe* ($g eq.not 0$):
 $m_0$ = Startmasse
 $m°$ = Ausgestossense Masse pro Zeit
 $v_0$ = Startgeschwindigkeit
@@ -142,7 +141,7 @@ u = Ausstoßgeschwindigkeit \
 
 $ v(t) = u dot ln(frac(m_0, m_0 - m° t)) - g dot t + v_0 $
 
-#bold("Steighöhe nach Flugzeit t in Erdnähe") ($g eq.not 0$): \
+*Steighöhe nach Flugzeit t in Erdnähe* ($g eq.not 0$): \
 $m_0$ = Startmasse
 $m°$ = Ausgestossense Masse pro Zeit
 $v_0$ = Startgeschwindigkeit
@@ -150,14 +149,14 @@ u = Ausstoßgeschwindigkeit \
 
 $ h(t) = u dot t - g/2 dot t^2 + v_0 dot t - u / m° dot ln(frac(m_0, m_0 - m° dot t)) dot (m_0 - m° dot t) $
 
-#bold("Mit Brenndauer:") \
+*Mit Brenndauer:* \
 $m_0$ = Startmasse
 $m°$ = Ausgestossense Masse pro Zeit
 $m$ = Verbleibende Masse
 
 $ t = frac(m_0 - m, m°) $
 
-#bold("Kepler Gesetze:") \
+*Kepler Gesetze:* \
 1. Planeten bewegen sich auf Ellipsen, in deren einem Brennpunkt die Sonne steht
 2. Der Fahrstrahl eines Planeten ¨uberstreicht in gleichen Zeiten gleiche Flächen
 3. Die Quadrate der Umlaufzeiten zweier Planeten verhalten sich wie die Kuben der Halbachsen der Planten.
@@ -170,23 +169,23 @@ $r_E$ = Abstand der Masse $m$ von der Erde \
 
 $ E_"pot" = -G dot frac(m_e dot m, r_E) $
 
-#bold("Fluchtgeschwindigkeit") $V_F$: \
+*Fluchtgeschwindigkeit* $V_F$: \
 $ V_F = sqrt(2 frac(G dot m_E, r_E)) = 11.15 frac(k m, s)  $
 
-#bold("Minimale Kreisbahngeschwindigkeit") $V_K$: \
+*Minimale Kreisbahngeschwindigkeit* $V_K$: \
 $ V_K = sqrt(frac(G dot m_E, r_E)) = 7.89 frac(k m, s) $
 
 
 #subsection("Zentripetalkraft")
 #image("../figures/zentripetal.png", width: 100%)
 
-#bold("Zentrifugalkraft vektoriell:") \
+*Zentrifugalkraft vektoriell:* \
 $m$ = Masse \
 $a_r$ = Radiale Zentripetalbeschleunigung
 
 $ arrow(F)_Z = -m dot arrow(a)_r $
 
-#bold("Zentrifugalkraft:") \
+*Zentrifugalkraft:* \
 r = Radius \
 $omega$ = Winkelgeschwindigkeit \
 $v = omega dot r$ = Umfangsgeschwindigkeit bei Radius r
@@ -195,29 +194,29 @@ $ F_Z = m dot a_r $
 $ F_Z = m dot omega^2 dot r $
 $ F_Z = m dot v^2 / r $
 
-#bold("Zentripetalbeschleunigung:") \
+*Zentripetalbeschleunigung:* \
 $ a_r = frac(v^2, r) = omega^2 dot r $
 
-#bold("Corioliskraft (Betrag):") \
+*Corioliskraft (Betrag):* \
 $v_r$ = Radiale Geschwindigkeit \
 $omega$ = Winkelgeschwindigkeit \
 
 $ F_C = 2 dot m dot v_r dot omega $
 
-#bold("Tangentielle Coriolisbeschleunigung:") \
+*Tangentielle Coriolisbeschleunigung:* \
 $v_r$ = Radiale Geschwindigkeit \
 $omega$ = Winkelgeschwindigkeit \
 
 $ F_C = 2 dot v_r dot omega $
 
-#bold("Rotationsarbeit:") \
+*Rotationsarbeit:* \
 $v_r$ = Radiale Geschwindigkeit \
 $omega$ = Winkelgeschwindigkeit \
 
 $ F_C = 2 dot v_r dot omega $
 
 #subsection("Drehbewegung")
-#bold("Drehmoment M um eine vorgegebene Achse A:") \
+*Drehmoment* $M$ *um eine vorgegebene Achse* $A$: \
 $M$ = Betrag des Drehmoments um Achse A \
 $a$ = Winkelbeschleunigung um Achse A \
 $J$ = Trägheitsmoment bzgl. der Achse A \
@@ -225,7 +224,7 @@ $r$ = Radius \
 
 $ M = J_A dot a = r dot F $
 
-#bold("Trägheitsmoment J einer Punkt-Masse") $m_0$: \
+*Trägheitsmoment* $J$ *einer Punkt-Masse* $m_0$: \
 $m_0$ = Punktmasse
 $r$ = Abstand der Punktmasse von der Achse A
 $ J = m_0 dot r^2_A $
@@ -233,17 +232,16 @@ $ J = m_0 dot r^2_A $
 #image("../figures/massenträgheitsmoment.png", width: 100%)
 
 #subsubsection("Satz von Steiner")
-#bold("Trägheitsmoment ") $J_A$ #bold("bzgl. einer Achse A berechnet aus Schwerpunkts-Trägheitsmoment") $J_"SP"$: \
+*Trägheitsmoment* $J_A$ *bzgl. einer Achse* $A$ *berechnet aus Schwerpunkts-Trägheitsmoment* $J_"SP"$: \
 
 $J_A$ = Trägheitsmoment bzgl. Achse A \
 $J_"SP"$ = Trägheitsmoment bzgl. Schwerpunkt \
 $R_A$ = Abstand der Achse A vom Schwerpunk SP \
 $m$ = Masse \
 
-
 $ J_A = J_"SP" + m dot R^2_A $
 
-#bold("Trägheitsmoment") $J_B$ #bold("bzgl. einer Achse B berechnet aus Trägheitsmoment") $J_A$ #bold("bzgl. Achse A:") \
+*Trägheitsmoment* $J_B$ *bzgl. einer Achse* $B$ *berechnet aus Trägheitsmoment* $J_A$ *bzgl. Achse* $A$ \
 
 $J_A$ = Trägheitsmoment bzgl. Achse A \
 $J_B$ = Trägheitsmoment bzgl. Achse B \
@@ -253,37 +251,37 @@ $m$ = Masse \
 $ J_B = J_A + m dot R^2_"AB" $
 
 #subsection("Drehstuff")
-#bold("Rotationsleistung") $P$: \
+*Rotationsleistung* $P$: \
 $M$ = Drehmoment \
 $omega$ = Winkelgeschwindigkeit \
 
 $ P = M dot omega $
 
-#bold("Totale Energie") $E_"tot"$: \
+*Totale Energie* $E_"tot"$: \
 $E_"tra"$ = Translationsenergie \
 $E_"rot"$ = Rotationsenergie \
 
 $ E_"tot" = E_"tra" + E_"rot" $
 
-#bold("Rotationsenergie") $E_"rot"$: \
+*Rotationsenergie* $E_"rot"$: \
 $J_"SP"$ = Trägheitsmoment bzgl. Schwerpunkt \
 $omega$ = Winkelgeschwindigkeit \
 
 $ E_"rot" = frac(J_"SP" dot omega^2, 2) $
 
-#bold("Translationsenergie") $E_"tra"$: \
+*Translationsenergie* $E_"tra"$: \
 $m$ = Masse \
 $v_"SP"$ = Schwerpunktgeschwindigkeit \
 
 $ E_"tra" = frac(m dot v^2_"SP", 2) $
 
-#bold("Drehimpuls L bei Rotation um eine Achse A:") \
+*Drehimpuls* $L$ *bei Rotation um eine Achse* $A$ \
 $J_A$ = Trägheitsmoment bzgl. Achse A \
 $omega$ = Winkelgeschwindigkeit \
 
 $ L = J_A dot omega $
 
-#bold("Kreisel:") \
+*Kreisel* \
 $Omega$ = Präzessions-Winkelgeschwindigkeit \
 $r_"os"$ = Abstand Drehpunkt zu Schwerpunkt \
 $m$ = Masse \
@@ -293,7 +291,7 @@ $omega$ = Winkelgeschwindigkeit \
 $ Omega = M / L_r $
 $ Omega = frac(r_"OS" dot m dot g, J dot omega) $
 
-#bold("Betrag des Drehmoments durch Gewichtskraft:") \
+*Betrag des Drehmoments durch Gewichtskraft:* \
 $M = |arrow(M)| $ = Betrag des Drehmoment 
 $r_"os"$ = Abstand Drehpunkt zu Schwerpunkt \
 $m$ = Masse \
@@ -301,7 +299,7 @@ $beta$ = Kegelwinkel der Präzession \
 
 $ M = r_"OS" dot m dot g dot sin(beta) $
 
-#bold("Radialer Drehimpuls:") \
+*Radialer Drehimpuls:* \
 $L_r$ = Radialkomponente des Drehimpuls \
 $L = J dot omega $ = Totaler Drehimpuls \
 $beta$ = Kegelwinkel der Präzession \
@@ -315,32 +313,32 @@ $triangle.stroked.t theta$ = Drehwinkel \
 $M$ = Drehmoment \
 $l$ = Trägheitsmoment \
 
-#bold("Winkelgeschwindigkeit") $omega$: \
+*Winkelgeschwindigkeit* $omega$: \
 $ omega = frac(d theta, d t) $
 
-#bold("Winkelbeschleunigung") $alpha$: \
+*Winkelbeschleunigung* $alpha$: \
 $ alpha = frac(d omega, d t) = frac(d^2 theta, d t^2) $
 
-#bold("Gleichungen für den Fall konstanter Winkelbeschleunigung"): \
+*Gleichungen für den Fall konstanter Winkelbeschleunigung:"* \
 $ omega = omega_0 + alpha t $
 $ triangle.stroked.t theta = <omega> triangle.stroked.t t $
 $ <omega> = 1/2 (omega_0 + omega) $
 $ theta = theta_0 + omega_0 t + 1/2 alpha t^2 $
 $ omega^2 = omega^2_0 + 2 a triangle.stroked.t theta $
 
-#bold("Arbeit"): \
+*Arbeit:"* \
 $ d W = M dot d theta $
 
-#bold("Kinetische Energie"): \
+*Kinetische Energie:"* \
 $ E_"kin" = 1/2 dot l dot omega^2 $
 
-#bold("Leistung"): \
+*Leistung:"* \
 $ P = M dot omega $
 
-#bold("Drehimpuls"): \
+*Drehimpuls:"* \
 $ L = l dot omega $
 
-#bold("Zweites Newton'sches Axiom"): \
+*Zweites Newton'sches Axiom:"* \
 $ M = l dot alpha = frac(d L, d t) $
 
 #subsubsection("Lineare Bewegung")
@@ -348,30 +346,30 @@ $triangle.stroked.t x$ = Verschiebung \
 $F$ = Kraft \
 $m$ = Masse \
 
-#bold("Geschwindigkeit"): \
+*Geschwindigkeit:"* \
 $ v = frac(d x, d t) $
 
-#bold("Beschleunigung"): \
+*Beschleunigung:"* \
 $ a = frac(d v, d t) = frac(d^2 x, d t^2) $
 
-#bold("Gleichungen für den Fall konstanter Beschleunigung"): \
+*Gleichungen für den Fall konstanter Beschleunigung:* \
 $ v = v_0 + a t $
 $ triangle.stroked.t x = <v> triangle.stroked.t t $
 $ <v> = 1/2 (v_0 + v) $
 $ x = x_0 + v_0 t + 1/2 a t^2 $
 $ v^2 = v^2_0 + 2 a triangle.stroked.t x $
 
-#bold("Arbeit"): \
+*Arbeit:* \
 $ d W = F dot d s $
 
-#bold("Kinetische Energie"): \
+*Kinetische Energie:* \
 $ E_"kin" = 1/2 dot m dot v^2 $
 
-#bold("Leistung"): \
+*Leistung:* \
 $ P = F dot v $
 
-#bold("Impuls"): \
+*Impuls:* \
 $ p = m dot v $
 
-#bold("Zweites Newton'sches Axiom"): \
+*Zweites Newton'sches Axiom:* \
 $ F_"ext" = m dot a = frac(d p, d t) $

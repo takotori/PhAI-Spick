@@ -4,34 +4,32 @@
 #subsection("Quadratische Gleichung")
 $ a x^2 + b x + c = 0 $
 
-#bold("Mitternachtsformel"): \
+*Mitternachtsformel:* \
 $ x_{1,2} = frac(-b plus.minus sqrt(b^2 - 4a c), 2a) $
-
-#bold("")
 
 #subsection("Formen")
 #subsubsection("Kreis")
-#bold("Umfang C:") \
+*Umfang C:* \
 $ C = pi dot 2r $
 
-#bold("Fläche A:") \
+*Fläche A:* \
 $ A = pi dot r^2 $
 
 #subsubsection("Dreieck")
-#bold("Umfang C:") \
+*Umfang C:* \
 $ C = a + b + c $
 
-#bold("Fläche A:") \
+*Fläche A:* \
 $ A = frac(1, 2) dot b dot h $
 
-#bold("Pythagoras:") \
+*Pythagoras:* \
 $ c = sqrt(a^2 + b^2) $
 
 #subsubsection("Kugel")
-#bold("Volumen V:") \
+*Volumen V:* \
 $ V = frac(4, 3) dot pi dot r^3 $
 
-#bold("Oberfläche A:") \
+*Oberfläche A:* \
 $ A = 4 dot pi dot r^2 $
 
 #subsection("Trigonometrie")
@@ -45,8 +43,12 @@ $ g = h dot sin(a), #" " h = frac(g, sin(a)), #" " a = arcsin(g / h)$
 
 #image("../figures/circle.png", width: 60%)
 
+*Grad <-> Rad* \
+$ "Rad" = frac("Grad" dot pi, 180) $
+$ "Grad" = frac("Rad" dot 180, pi) $
+
 #subsection("Vektor")
-#bold("Kreuzprodukt:")
+*Kreuzprodukt:*
 $ mat(a_x; a_y; a_z;) × mat(b_x; b_y; b_z;) := mat(a_y b_z - a_z b_y; a_z b_x - a_x b_z; a_x b_y - a_y b_x;) $
 
 #subsection("Ableitung")
