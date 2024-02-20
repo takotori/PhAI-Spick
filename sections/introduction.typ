@@ -1,3 +1,3 @@
 #import "../utils.typ": *
 
-#section("Statik")
+#section("Introduction")
