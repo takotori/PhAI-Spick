@@ -20,6 +20,9 @@
 )
 
 #subsection("Mehrdimensionale Analysis")
+*Linearisierung:* \
+$ f(x) underbrace(approx, x approx x_0) f'(x_0)(x - x_0) + f(x_0) $
+
 Häufig mit Funktionen mehrerer Variablen zu tun, die weitere Funktionen beinhalten. \
 $ f(x, y) = x^2 dot sin(y) $
 $ x(t) = sin(t) $
@@ -48,3 +51,14 @@ $ triangle.t v_1 = |frac(diff v_1, diff h)| dot triangle.t h + |frac(diff v_1, d
 
 *Statistische Fehler: (vlt nicht so wichtig)* \
 $ triangle.t v_1 = sqrt((frac(diff v_1, diff h) dot triangle.t h)^2 + (frac(diff v_1, diff g) dot triangle.t g)^2) $
+
+
+
+Übung 1:
+$ D = 0.711 plus.minus 0.005 m $
+$ T = 0.400 plus.minus 0.001s $
+$ v = U / T  = frac(pi D, T) $
+
+$ triangle.t v = |frac(diff v, diff D) dot triangle.t D| + |frac(diff v, diff T) dot triangle.t T| $
+$ |pi / T| dot 0.005m + |- frac(pi D, T^2)| dot 0.001s $
+$ pi / 0.5s dot 0.005m + frac(pi dot 0.711m, (0.4s)^2) dot 0.001s $
