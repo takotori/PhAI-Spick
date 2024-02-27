@@ -37,3 +37,14 @@ $ = 2 sin(t) dot cos(t) dot sin(t^3) + sin(t)^2 dot cos(t^3) dot 3t^2 $
 
 Altenativ mit mehrdimensionale Kettenregel möglich. Bei dieser werden die partiellen Ableitungen mit der Ableitung der Funktion multipliziert und addiert.
 $ frac(d f, d t) = frac(diff f, diff x) dot frac(d x, d t) + frac(diff f, diff y) dot frac(d y, d t) $
+
+#subsection("Energie (?)")
+$v$ und $h$ sind abhängig von t. $E$ ist immer konstant.
+$ underbrace(1/2 M v^2, "Energieerhaltungssatz") + underbrace(M g h, "Lageenergie") = E $
+
+#subsection("Fehlerfortpflanzung")
+*Systematische Fehler:* \
+$ triangle.t v_1 = |frac(diff v_1, diff h)| dot triangle.t h + |frac(diff v_1, diff g)| triangle.t g $
+
+*Statistische Fehler: (vlt nicht so wichtig)* \
+$ triangle.t v_1 = sqrt((frac(diff v_1, diff h) dot triangle.t h)^2 + (frac(diff v_1, diff g) dot triangle.t g)^2) $
