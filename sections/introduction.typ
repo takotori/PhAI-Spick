@@ -52,13 +52,13 @@ $ triangle.t v_1 = |frac(diff v_1, diff h)| dot triangle.t h + |frac(diff v_1, d
 *Statistische Fehler: (vlt nicht so wichtig)* \
 $ triangle.t v_1 = sqrt((frac(diff v_1, diff h) dot triangle.t h)^2 + (frac(diff v_1, diff g) dot triangle.t g)^2) $
 
+#section("Kinematik")
 
+Mittlere Geschwindigkeit: \
+$ arrow(v) = frac(triangle.t arrow(r), triangle.t t) = frac(arrow(r)_1 - arrow(r)_0, t_1 - t_0) $
 
-Übung 1:
-$ D = 0.711 plus.minus 0.005 m $
-$ T = 0.400 plus.minus 0.001s $
-$ v = U / T  = frac(pi D, T) $
+Momentangeschwindigkeit: \
+$ arrow(v)_0 = lim_(triangle.t t -> 0) frac(triangle.t arrow(r), triangle.t t) = frac(d arrow(r)(t), d t) = dot(arrow(r))(t_0) $
 
-$ triangle.t v = |frac(diff v, diff D) dot triangle.t D| + |frac(diff v, diff T) dot triangle.t T| $
-$ |pi / T| dot 0.005m + |- frac(pi D, T^2)| dot 0.001s $
-$ pi / 0.5s dot 0.005m + frac(pi dot 0.711m, (0.4s)^2) dot 0.001s $
+Beschleunigung: \
+$ arrow(a)(t) = frac(triangle.t arrow(v), triangle.t t) = dot(arrow(v))(t) = dot.double(arrow(r))(t) $
