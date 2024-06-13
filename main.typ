@@ -4,3 +4,5 @@
 // #include "sections/introduction.typ"
 #include "sections/grundlagen.typ"
 #include "sections/kinematik.typ"
+#include "sections/messfehler.typ"
+#include "sections/kraft.typ"
