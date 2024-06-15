@@ -1,19 +1,7 @@
-#let section(name) = {
-  align(center, [#heading(numbering: "1.1.1.", level: 1, name)])
-  line(length: 100%)
-}
+ #let colorange(x) = text(fill: orange, $#x$)
 
-#let subsection(name) = {
-  align(center, [#heading(numbering: "1.1.1.", level: 2, name)])
-  line(length: 100%)
-}
+#let colgreen(x) = text(fill: green, $#x$)
 
-#let subsubsection(name) = {
-  align(center, [#heading(numbering: "1.1.1.", level: 3, name)])
-  line(length: 100%)
-}
+#let colmagenta(x) = text(fill: fuchsia, $#x$)
 
-#let subsubsubsection(name) = {
-  align(center, [#heading(numbering: "1.1.1.", level: 4, name)])
-  line(length: 100%)
-}
+#let colblue(x) = text(fill: blue, $#x$)
