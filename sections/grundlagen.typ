@@ -22,6 +22,22 @@
   ]
 )
 
+== Vektorrechnung
+*Länge des Vektors*: $|arrow(u)| = sqrt(u_x^2 + u_y^2 + u_z^2)$
+
+== Ableitungen
+#table(
+  columns: (50%, 50%),
+  inset: 2pt,
+  fill: (_, row) => if row == 0 { gray },
+  [*Funktion*], [*Ableitung*],
+  $ x^a $,      $ a dot x^(a-1) $,
+  $ 1/x $,      $ - 1 / x^2 $,
+  $ sqrt(x) $,  $ frac(1, 2 sqrt(x)) $,
+  $ sin(x) $,   $ cos(x) $,
+  $ cos(x) $,   $ -sin(x) $,
+  $ tan(x) $,   $ 1 / cos(2)^x $,
+)
 === Physikalische Grössen
 #table(
   columns: (auto, auto, auto, auto),

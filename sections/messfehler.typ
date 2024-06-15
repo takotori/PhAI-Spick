@@ -22,18 +22,10 @@ Grösse $z$ aus Messwerten der Grössen $x$ und $y$ gemäss
 #align(center, $z=f(x,y)$)
 und wurden die Messgrössen x und y durch Mehrfachmessung ($x$ n-fach gemessen, $y$ m-fach gemessen) und ohne systematischen Fehler bestimmt, so darf von statistisch normalverteilten Fehlern ausgegangen werden. In diesem Fall errechnet sich die Standardunsicherheit der Messwerte von x und y gemäss
 
-#grid(
-  columns: (auto, auto),
-  inset: 5pt,
-  $
-Delta x &=sqrt(1/(n(n-1)) sum_(i=1)^n (x_i-macron(x))^2 )=σ_x/sqrt(n) \
-Delta y &=√(1/(m(m-1)) sum_(i=1)^m (y_i-macron(y) )^2 )=sigma_y/sqrt(m)	
-$,$
-sigma = "Standardabweichung" \
-macron(x) = 1/n sum_(i=n)^n x_i ="Mittelwert"
-$
-)
-
+$Delta x &=sqrt(1/(n(n-1)) sum_(i=1)^n (x_i-macron(x))^2 )=σ_x/sqrt(n) \
+Delta y &=√(1/(m(m-1)) sum_(i=1)^m (y_i-macron(y) )^2 )=sigma_y/sqrt(m) \
+sigma &= "Standardabweichung" \
+macron(x) &= 1/n sum_(i=n)^n x_i ="Mittelwert"$
 
 Es gilt also
 $

@@ -30,8 +30,26 @@ In der Statik beewegen sich die Objekte nicht. Dort gilt also:
   columns: (40%, auto),
   gutter: 5pt,
   image("../figures/kraftStatik1.png"),
-  [$ "X)"F_s dot cos(colblue(18^circle.small)) &-μ dot  F_N \ &-F_G dot sin(colgreen(35^circle.small))=0$ \
-  $ "Y)" F_s dot  sin(colblue(18^circle.small)) &+F_N \ &-F_G dot cos(colgreen(35^circle.small))=0$]
-
+  $ "X)"F_s dot cos(colblue(18^circle.small)) &-μ dot  F_N \ &-F_G dot sin(colgreen(35^circle.small))=0 \
+  "Y)" F_s dot  sin(colblue(18^circle.small)) &+F_N \ &-F_G dot cos(colgreen(35^circle.small))=0$
 )
 
+#image("../figures/kraftStatik2.png")
+
+Ein Gewicht der Masse $m = 10"kg"$ wird entsprechend der obigen Skizze durch Seile an einer Wand befestigt. Welche Kräfte wirken im linken und rechten Seil?
+
+*1. Methode:*
+
+$F_L/sqrt(3^2+4^2 ) vec(-3,4)+F_R/sqrt(8^2+6^2 ) vec(8,6)+m g vec(0,-1)=0$
+
+*2. Methode*
+
+$F_L vec(-cos(alpha),sin(alpha))+F_R vec(cos(beta),sin(beta))+m g vec(0,-1)=0$
+
+#grid(
+  columns: (auto, auto),
+  gutter: 5pt,
+  align: (center +bottom, center+bottom),
+  image("../figures/kraftStatik3.png"),
+  image("../figures/kraftStatik4.png")
+)
