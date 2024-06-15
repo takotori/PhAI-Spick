@@ -5,6 +5,7 @@ $ m g=(m v^2)/r $
 Daraus folgt die Formel für die
 #table(
   columns: (50%, 50%),
+  fill: (_, row) => if row == 0 { gray },
   [Geschwindigkeit], [Umlaufzeit],
   $v= sqrt(g r)$, [$T=2 pi sqrt(r/g)$]
 )

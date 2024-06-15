@@ -2,9 +2,9 @@
 #grid(
   columns: (auto, auto),
   gutter: 5pt,
-  [*kinetische Energie*], [$ E_k = 1/2 m v^2 $],
-  [*potenzielle Energie*], [$ E_p = m g h $],
-  [*spannenergie einer Feder*], [$ E_F = 1/2 D y^2 $],
+  [*Kinetische Energie*], [$ E_k = 1/2 m v^2 $],
+  [*Potenzielle Energie*], [$ E_p = m g h $],
+  [*Spannenergie einer Feder*], [$ E_F = 1/2 D y^2 $],
   [*Energieerhaltungssatz*], [$ E_"tot" = sum_i E_i = "konst." $]
 )
 #v(-10pt)

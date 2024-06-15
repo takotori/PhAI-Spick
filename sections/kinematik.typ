@@ -5,7 +5,7 @@
   [*Mittlere Geschwindigkeit:*], [*$macron(v) = (Delta v)/(Delta s)$*],
   [*Mittlere Beschleunigung:*], [*$macron(a) = (Delta v)/(Delta t)$*],
   [*Gleichförmige Bewegung:*], [*$s = s_0 + v dot t a => s/v = t $*],
-  [*Geradlinige Bewegung:*], [$Delta s= macron(v) ̅Delta t$]
+  [*Geradlinige Bewegung:*], [$Delta s= macron(v) Delta t$]
 )
 *Gleichmässig beschleunigte Bewegung:*
 $
@@ -39,12 +39,9 @@ $
 #image("../figures/gleichkreisbewegung.png")
 
 == Schiefer Wurf
-*Bewegungsgleichung:* 
-#align(right, $arrow(r) (t)= arrow(r_0) + arrow(v_0 ) t+1/2 arrow(g) t^2$)
-\
-#align(center, 
-$vec(x(t), y(t)) = vec(0,y_0) + v_0 vec(cos(alpha), sin(alpha)) dot t + 1/2 vec(0,-g) t^2$
-)
+*Bewegungsgleichung:* $arrow(r) (t)= arrow(r_0) + arrow(v_0 ) t+1/2 arrow(g) t^2$ \
+
+$ vec(x(t), y(t)) = vec(0,y_0) + v_0 vec(cos(alpha), sin(alpha)) dot t + 1/2 vec(0,-g) t^2 $
 
 #image("../figures/schieferwurf.png")
 

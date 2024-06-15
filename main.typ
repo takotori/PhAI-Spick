@@ -1,5 +1,5 @@
 #import "ost-summary-template.typ": *
-#show: doc => conf(lecture: "Physik Anwendung für Inßformatik", authors: "Felix Tran, Joshua Beny Hürzeler", doc)
+#show: doc => conf(lecture: "Physik Anwendung für Informatik", authors: "Felix Tran, Joshua Beny Hürzeler", doc)
 
 #include "sections/grundlagen.typ"
 #include "sections/kinematik.typ"
