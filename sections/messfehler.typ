@@ -1,7 +1,7 @@
 #import "../utils.typ": *
 
 = Messen und Messfehler
-*Systematische Fehler:* z.B. messen mit falsch kalibriertem Messgerät
+*Systematische Fehler:* z.B. Messen mit falsch kalibriertem Messgerät. \
 Berechnet sich der Wert einer Grösse $z$ aus Messwerten der Grössen $x$ und $y$.
 
 #align(center, $z=f(x,y)$)
@@ -14,9 +14,9 @@ z_0 = f(x_0,y_0) \
 Delta z= abs(partial/(partial x) f(x_0,y_0)) dot Delta x+ abs( partial/(partial y) f(x_0,y_0)) dot Delta y
 $
 
-sofern die Grössen $x$ und $y$, z.B. auf Grund von fehlerhaften Messinstrumenten, systematisch falsch bestimmt wurden. Die Fehlerabschätzung durch systematische Fehler ist eine «worst-case»-Abschätzung
-*Statistische Fehler:* bei mehrfach messen unterschiedliche Ergebnisse \
- $=>$ mehrmals mässen und Mittelwert nehmen verkleinert den Fehler
+sofern die Grössen $x$ und $y$, z.B. auf Grund von fehlerhaften Messinstrumenten, systematisch falsch bestimmt wurden. Die Fehlerabschätzung durch systematische Fehler ist eine «worst-case»-Abschätzung \
+*Statistische Fehler:* Bei mehrfach messen unterschiedliche Ergebnisse \
+ $=>$ Mehrmals messen und Mittelwert nehmen verkleinert den Fehler
 Fehlerfortpflanzung für normalverteilte Fehler. Berechnet sich der Wert einer
 Grösse $z$ aus Messwerten der Grössen $x$ und $y$ gemäss
 #align(center, $z=f(x,y)$)
@@ -49,8 +49,8 @@ m &=(10N)/(9.81 m\/s^2 dot sin(30^circle.small) )=2.0387
 $
 Partielle Ableitungen:
 $
-partial/(partial g) (F_H/(g dot sin(alpha)) ))=-F_H/(g^2 dot sin(alpha) ) \
-partial/(partial alpha) (F_H/(g dot sin(alpha)) ))=-(F_H dot cos(alpha))/(g dot sin^2^circle.small (F_H))
+frac(partial m, partial g) (F_H/(g dot sin(alpha)) ))=-F_H/(g^2 dot sin(alpha) ) \
+frac(partial m, partial alpha) (F_H/(g dot sin(alpha)) ))=-(F_H dot cos(alpha))/(g dot sin^2^circle.small (F_H))
 $
 $
 Delta m &= abs(-F_H/(g^2 dot sin(alpha)) dot colmagenta(Delta g)) +  abs(-(F_H dot cos(alpha))/(g dot sin^2 (F_H ) ) dot colorange(Delta alpha)) \ &+ abs(1/(g dot sin(alpha)) dot colgreen(Delta 

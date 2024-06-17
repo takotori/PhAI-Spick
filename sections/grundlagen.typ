@@ -39,6 +39,10 @@
   $ cos(x) $,   $ -sin(x) $,
   $ tan(x) $,   $ 1 / cos(2)^x $,
 )
+
+*Produktregel:* $ d/(d x)(f(x) dot g(x)) = f'(x) dot g(x) + f(x) dot g'(x) $
+*Kettenregel:* $ d/(d x)f(g(x)) = f'(g(x)) dot g'(x) $
+
 === Physikalische Grössen
 #table(
   columns: (auto, auto, auto, auto),
