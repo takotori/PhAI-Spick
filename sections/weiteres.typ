@@ -1,3 +1,5 @@
+#import "../utils.typ" : *
+
 = Weiteres
 == Taschenrechner
 - *Menu → 3 → 1* für solve()
@@ -42,4 +44,43 @@ v &= sqrt(v_x^2 + v_y^2) = sqrt((g x^2) / (2 y) + 2 g y) \
 &= sqrt(198 m^2 \/ s^2)= 14 m \/ s
 $
 
+=== Komplexe Kräfteaufgabe
+An der Spitze eines h = 8 m hohen Mastes üben die befestigten Leitungen die Zugkräfte
+$F_1 = 4800 N, F_2 = 1200 N "und" F_3 = 2700 N$ aus. Der Winkel $alpha = 40^circle.small$ und $beta = 30^circle.small$. In
+welcher Richtung $gamma$ muss ein l = 9.6 m langes schräges Drahtseil verankert werden, damit
+an der Mastspitze keine horizontale Kraft wirksam wird? Wie gross ist die Zugkraft F
+im Seil?
 
+#image("../figures/aufgaben1.png")
+
+Aus dem Seitenriss geht hervor, dass die Kraft F in eine horizontale (xy-Ebene) Kompo-
+nente $F_"xy" = F cos delta$ und in eine vertikale (z-Richtung) Komponente $F_z = F sin delta$ zerlegt
+werden kann. Somit:
+#image("../figures/aufgaben2.png")
+
+1. Gleichgewicht in x-Richtung:
+$ - F_1  + F_2 cos(alpha) + F_3 cos(beta) + F cos(delta) cos(gamma) = 0 $
+
+2. Gleichgewicht in y-Richtung:
+$ F_2 sin(alpha) - F_3 sin(beta) + F cos(delta) sin (gamma) = 0 $
+
+3. Gleichgewicht in z-Richtung:
+$ F_M - F sin(delta) = 0 $
+
+4. Daraus folgt aus X-Gleichung:
+$ F cos(delta) cos(gamma) = colmagenta([F_1 - F_2 cos(alpha) - F_3 cos(beta)]) $
+
+5. Daraus folgt aus Y-Gleichung:
+$ F cos(delta) sin(gamma) = colblue({- F_2 sin(alpha) + F_3 sin(beta)}) $
+
+6. Da $F^2 cos^2(delta) (sin^2(gamma) + cos^2(gamma)) = F^2 cos^2(delta)$ können wir die 2 Gleichungen quadrieren und zusammenzählen:
+$ F^2 cos^2(delta) = colmagenta([ ])^2 + colblue({ })^2 $
+
+7. Da $sin(delta) = h/l$ erhalten wir für den Cosinus:
+$ cos^2(delta) = 1 - h^2/l^2 $
+
+8. Die gesuchte Seilkraft F ist somit:
+$ F = sqrt((colmagenta([ ])^2 + colblue({ })^2) / (1 - h^2/l^2)) = 3056 N $
+
+9. Winkel $gamma$ erhalten wir als Quotient von Y und X-Gleichung:
+$ gamma = arctan(colblue({ }) / colmagenta([ ])) = 17.3^circle.small $
