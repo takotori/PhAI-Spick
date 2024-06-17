@@ -1,6 +1,6 @@
 = Fadenpendel
 #grid(
-  columns: (auto, auto),
+  columns: (32%, auto),
   gutter: 5pt,
   image("../figures/fadenpendel.png"),[
     #set math.cases(reverse: true)
