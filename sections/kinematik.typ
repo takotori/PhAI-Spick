@@ -46,10 +46,10 @@ $ vec(x(t), y(t)) = vec(0,y_0) + v_0 vec(cos(alpha), sin(alpha)) dot t + 1/2 vec
 #image("../figures/schieferwurf.png")
 
 #grid(
-  columns: (50%, 50%),
+  columns: (auto, 38%),
   gutter: 5pt,
 $ 
-y =& x dot tan(alpha_0) - g / (2 v_0^2 cos^2(alpha_0)) \ &dot x^2 \
+y =& x dot tan(alpha_0) - g / (2 v_0^2 cos^2(alpha_0)) dot x^2 \
 y_(max) &= (v_0^2 sin^2(alpha_0))/(2g) \
 x_w &=(v_0^2 sin(2 alpha_0))/g
 $,
