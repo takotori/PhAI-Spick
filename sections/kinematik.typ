@@ -23,7 +23,7 @@ $
 [*Umlaufzeit:*],	[$T$],[$[T]=s$],
 [*Frequenz:*],	[$f= 1/T$],[$[f]= s^(-1) = "Hz"$],
 [*Winkelkoordinate:*],	[$phi= b/r$],[$[phi]="rad"=m/m$],
-[*Winkel-geschwindigkeit:*],[$omega&=Delta phi/Delta t \ &=2pi/T=2pi f$],[$[omega]="rad"/s$]
+[*Winkel-geschwindigkeit:*],[$omega&= frac(Delta phi, Delta t) \ &=2pi/T=2pi f$],[$[omega]="rad"/s$]
 )
 #grid(
   columns: (60%, auto),
