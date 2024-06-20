@@ -20,8 +20,9 @@ Berechnen Sie die Zeit, die ein Trolleybus für die Strecke von 600 m zwischen z
 testellen benötigt, wenn die Anfahrbeschleunigung 1 m/s2, die Bremsverzögerung 0.75
 m/s2 und die Geschwindigkeit während der gleichförmigen Bewegung 54 km/h beträgt.
 
+*Lösungsweg:*
 1. Skizze erstellen und in Zonen aufteilen
-#align(center, image("../figures/aufgaben4.png", width: 60%))
+#align(center, image("../figures/aufgaben4.png", width: 75%))
 
 2. Gegebene Werte notieren
 #table(
@@ -61,7 +62,95 @@ t_"Total" &=t_0+t_1+t_2+t_3 \
 &=0s+15s+22.5s+20s=57.53 s
 $
 
-== Fussgänger und Radfahrer
+=== Fussgänger und Radfahrer
+Ein Radfahrer und ein Fussgänger bewegen sich gleichzeitig von A nach B, wobei der eine
+stündlich 5 km und der andere 15 km zurücklegt. Der Radfahrer hält sich eine Stunde in
+B auf und trifft auf dem Rückweg den Fussgänger 30 km vor B entfernt. Wie gross ist die
+Distanz zwischen A und B?
+
+*Lösungsweg:*
+1. s-t-Diagramm erstellen
+#align(center, image("../figures/aufgaben5.png", width: 40%))
+
+2. Formel für Zeit des Fussgänger, $t_F$ aufstellen.
+$
+t_F = frac(s_"AB" - Delta s, v_F)
+$
+
+3. Formel für Zeit des Radfahrer, $t_R$ aufstellen. \ ($Delta t$ = Pause 1h)
+$
+t_R = frac(s_"AB" + Delta s, v_R) + Delta t
+$
+
+4. Da gemäss s-t-Diagramm beide Zeiten gleich sind, können wir die beiden Gleichungen gleichsetzen und nach $S_"AB"$ umstellen.
+$
+t_F &= t_R \
+frac(s_"AB" - Delta s, v_F) &= frac(s_"AB" + Delta s, v_R) + Delta t \
+s_"AB" / v_F - s_"AB" / v_R &= Delta s / v_F + Delta s / v_R + Delta t \
+s_"AB" (1/v_F - 1/v_R) &= Delta s (1/v_F + 1/v_R) + Delta t \
+s_"AB" &= frac(Delta s (1/v_F + 1/v_R) + Delta t, 1/v_F - 1/v_R) \
+s_"AB" &= frac(30 "km" (frac(1, 5 "km" h^"-1") + frac(1, 15 "km"  h^"-1")) + 1h, frac(1, 5 "km" h^"-1") + frac(1, 15 "km"  h^"-1")) \ &= 67.5 "km"
+$
+
+=== Schiefer Wurf
+Ein Ball wird unter einem Winkel von 20° (notwendig) schräg nach unten geworfen (12m nach rechts und 7.5m nach unten). Mit welcher Anfangsgeschwindigkeit wurde der Ball geworfen?
+#align(center, image("../figures/aufgaben6.png", width: 40%))
+
+*Lösungsweg:*
+1. Richtungsgleichung aufstellen
+$
+arrow(r) = arrow(r_0) + arrow(v_0) dot t + 1/2 dot arrow(a) dot t^2
+$
+
+2. Anfangsbedingungen festlegen beim Werfer
+$
+arrow(v_0) &= v_0 dot vec(cos(-20^circle.small), sin(-20^circle.small)) dot t \
+arrow(r_0) &= vec(0, 0), 
+arrow(r_1) = vec(12, -7.5) 
+$
+
+3. Bedinungen in die Richtungsgleichung einsetzen
+$
+vec(12, -7.5) = vec(0, 0) + v_0 dot vec(cos(-20^circle.small), sin(-20^circle.small)) dot t \ + 1/2 dot vec(0, -9.81) dot t^2
+$
+
+4. X-Gleichung nach $v_0 dot t = s_1$ auflösen
+$
+12 &= v_0 dot cos(-20^circle.small) dot t <=> v_0 dot t = 12 / cos(-20^circle.small) \ &= 12.77
+$
+
+5. Y-Gleichung nach $t$ auflösen
+$
+-7.5 &= v_0 dot sin(-20^circle.small) dot t + 1/2 dot -9.81 dot t^2 \
+<=> t &= sqrt(frac(2 dot (7-5 - v_0 dot t dot sin(-20^circle.small)), 9.81)) = 0.8
+$
+
+6. Geschwindigkeit berrechnen
+$
+s_1 / t = v_0 = 12.77 / 0.8 = 16 m/s
+$
+
+=== Radialbeschleunigung
+Ein Riesenrad hat eine Umlaufdauer von 12 s. Wie gross sind Geschwindigkeit und Radialbeschleunigung einer Person im Abstand von 5.6 m von der Drehachse?
+
+*Lösungsweg:*
+1. Tangentialgeschwindigkeit $v_T$ berechnen
+$
+v_T &= (Delta s) / (Delta t) &= frac(2 pi dot r, T) &= frac(2 pi dot 5.6 m, 12 s) &= 2.9 m s^"-1"
+$
+
+2. Radialbeschleunigung $a_T$ berechnen aus $v_T$
+$
+a_T &= (v_T^2) / r &= frac(4 pi^2 dot r, T^2) &= frac(4 pi^2 dot 5.6m, (12 s)^2) &= 1.5 m s^"-2"
+$
+
+=== Aufprallgeschwindigkeit
+Aus welcher Höhe muss ein Mann herunterspringen, um den gleichen Aufprall zu erleben
+wie ein landender Fallschirmspringer, dessen Sinkgeschwindigkeit 6 m/s beträgt ?
+
+$
+h = frac(v^2, 2 g) = frac(6^2, 2 dot 9.81) = 1.84 m
+$
 
 == Kräfte
 === Komplexe Kräfteaufgabe
@@ -73,6 +162,7 @@ im Seil?
 
 #image("../figures/aufgaben1.png")
 
+*Lösungsweg:*
 Aus dem Seitenriss geht hervor, dass die Kraft F in eine horizontale (xy-Ebene) Kompo-
 nente $F_"xy" = F cos delta$ und in eine vertikale (z-Richtung) Komponente $F_z = F sin delta$ zerlegt
 werden kann. Somit:
@@ -114,6 +204,7 @@ ist die Kraft im Seil?
 
 #align(center, image("../figures/aufgaben3.png", width: 50%))
 
+*Lösungsweg:*
 1. Seilkraft für A und B bestimmen \ (#colred([Umlenkrolle lenkt $hat(r)$ um]))
 $
 &F_A=m_a dot a=F_S dot (vec(1,0))+F_R dot (vec(-1,0)) \
@@ -163,9 +254,202 @@ $
 4. Die gesuchte Geschwindigkeit ist:
 $
 v &= sqrt(v_x^2 + v_y^2) = sqrt((g x^2) / (2 y) + 2 g y) \ 
-&= sqrt((9.81 m \/ s^2 dot 2^2 m^2) / (2 dot 10m) + 2 dot 9.81 m \/ s^2 * 10m) \
-&= sqrt(198 m^2 \/ s^2)= 14 m \/ s
+&= sqrt((9.81 m \/ s^2 dot 2^2 m^2) / (2 dot 10m) + 2 dot 9.81 m \/ s^2 * 10m)
+$
+$
+= sqrt(198 m^2 \/ s^2)= 14 m \/ s
 $
 
+=== Fall auf eine Feder
+Eine Masse von 12 kg fällt aus 70 cm Höhe auf eine gefederte Unterlage, deren Federkonstante 4000 N/m beträgt. Wieviel wird die Feder beim Aufprall zusammengedrückt?
 
+*Lösungsweg:*
+1. Energieerhaltungssatz anwenden und Gleichungsystem aufstellen
+$
+E_"pot" = E_"Feder" ==> m g (h +s) = (c s^2) / 2
+$
 
+2. Dies ergibt die quadratische Gleichung:
+$
+c/2 s^2 - m g s - m g h = 0
+$
+
+3. Die Lösung der quadratischen Gleichung ist:
+$
+s &= (m g) / c + sqrt(((m g) / c)^2 + 2 (m g h) / c) \ 
+&= (12 dot 9.81) / 4000 + sqrt(((12 dot 9.81) / 4000)^2 + 2 (12 dot 9.81 dot 0.7) / 4000) \ 
+&= 0.2345 = 23,5 "cm" 
+$
+== Arbeit / Leistung
+=== Leistung einer Lokomotive
+Welche Arbeit (in kWh) leistet eine Lokomotive, die einen Zug von Flüelen nach Göschenen zieht? Die totale Masse des Zuges beträgt $400 t = 400^'000 "kg"$, die Strecke 37 km, die Höhendifferenz 670 m und der Rollreibungskoeffizient 0.002. Der Luftwiderstand werde vernachlässigt.
+
+*Lösungsweg:*
+1. Winkel $alpha$ bestimmen mittels Trigometrie
+$ sin(alpha)=(670m)/(37^' 000m) <=> alpha=1.04^circle.small $
+
+2. Energieerhaltungssatz aufstellen
+$
+E=1/2 dot m dot v^2+m dot g dot h+(m dot g dot s dot cos(alpha) ) dot μ
+$
+
+3. EES Einsetzen am Anfang ($colgreen(v=0), colmagenta(h=0), colorange(s=0)$)
+$
+E_0&=1/2 dot m dot colgreen(0)^2+m dot g dot colmagenta(0)+(m dot g dot colorange(0) dot cos(alpha) ) dot μ \ &= 0
+$
+
+4. EES Einsetzen am Ende ($colgreen(v=0), colmagenta(h=670m), colorange(s=37^'000m)$)
+$
+E_1 &= 1/2 dot m dot colgreen(0)^2+m dot g dot colmagenta(670)+(m dot g dot colorange(37^'000) dot cos(alpha) ) dot μ \ 
+&=2'919'408'166J 
+$
+
+5. Arbeit $W$ berechnen und in kWh umrechnen
+$
+W=E_0-E_1=(2'919'408'166J - 0J) / (3600s dot 1000) =810.97 "kWh"
+$
+
+=== Leistung eines Autos
+Ein Auto braucht bei der Geschwindigkeit 80 km/h auf 100 km 8 Liter Benzin. Wie
+gross ist der Fahrwiderstand (Rollreibung + Luftwiderstand), wenn der Wirkungsgrad
+des Motors 20 % beträgt? Das Benzin hat eine Dichte von 700 kg/m3 und einen Heizwert
+von 42 MJ/kg.
+
+*Lösungsweg:*
+$
+P_"ab" = F * v, P_"zu" = rho.alt dot (d V) / (d t) "(Benzinvolumen)" dot H "(Heizwert)" \
+P_"zu" = rho.alt dot (d V) / (d s) "(Literverbrauch)" dot (d s) / (d t) dot H = rho.alt dot (d V) / (d s) dot v dot H 
+$
+$
+F &= P_"ab" / v = frac(eta dot P_"zu", v) = frac(eta dot rho.alt dot (d V)/(d s) dot H, v) \
+F &= 0.2 dot 700 dot (8 dot 10^(-3) / 10^(-5) dot 42 dot 10^6) = 470 N
+$
+=== Pumpleistung
+Welche Wassermenge pro Zeiteinheit fördert eine 4-kW-Pumpe in ein 45 m höher liegendes
+Reservoir?
+
+*Lösungsweg:*
+
+Die an einem infinitesimalen Massen-Element $d m$ geleiste Arbeit $d W$ ist gleich seiner
+Zunahme an potentieller Energie, also $d W = d m g h$. Somit ist die Leistung $P$ der Pumpe,
+also die Arbeit pro Zeiteinheit:
+$
+P = (d W)/(d t) = (d m dot g dot h)/(d t) = rho.alt frac(d V, d t) dot g dot h
+$
+
+1. Formel nach $(d V )/ (d t) = dot(V)$ auflösen
+$
+(d V )/ (d t) &= P / (rho.alt g h) = (4'000 W) / (1'000 "kg"/m^3 dot 9.81 m/s^2 dot 45 m) = 9,061 dot 10^(-3) m^3/s \
+dot(V) &= 9,061 s^(-1)
+$
+
+== Kosmologie
+=== Satellit
+==== Höhe eines geostationären Satelliten
+Welcher Höhe muss Satellit auf Kreisbahn laufen, wenn er geostationär sein soll?
+#grid(
+  columns: (75%, auto),
+  grid(
+  columns: (auto, auto),
+  inset: 2pt,
+  [Erdradius:], $r_E=6.378 dot 10^6 m$,
+  [Erdmasse:], $M_E=5.98 dot 10^24 "kg"$,
+  [Gravitation:], $G = 6.67 dot 10^(-11) m^3 "kg"^(-1) s^(-2)$
+  ),
+  image("../figures/aufgaben7.png")
+)
+
+*Lösungsweg:*
+1. Ist die Geschwindigkeit des Satelliten konstant?
+_Ja, da Erde nicht schneller oder langsamer wird mit der Zeit $=> v="const" => dot(v) = 0$ \
+Hinterer Teil der Kreisbewegung kann ignoriert werden_
+
+2. Abhängig von Unbekannten Zentripetalkraft Formel anwenden
+$
+F_"äussere"=m dot omega^2 dot r dot hat(r) + m dot 0 dot hat(v) = m  dot omega^2 dot r dot hat(r) 
+$
+
+3. Umlaufzeit Erde berechnen
+$ T=24h dot 3600=86^'400s $
+
+4. Formel der Kräfte bestimmen: Satellit muss auf der Bahn bleiben, heisst 
+$
+arrow(F_G)-arrow(F_"äussere")&=arrow(0) \
+G dot (M_E dot m)/r^2  dot hat(r) &= m dot omega^2 dot r dot hat(r)
+$
+
+5. Formel kürzen, einsetzen und nach r auflösen
+$
+G dot M_E/r^3 =omega^2 => G dot M_E/r^3 =(2^2 dot pi^2)/T^2 \
+r=root(3, (G dot M_E dot T^2)/(4 pi^2 ))
+$
+
+6. Erdradius von Radius abziehen, um Höhe zu bekommen
+$
+h=r-r_E => root(3,((G dot M_E dot T^2)/(4pi^2 )))-r_E ≈ 35800 "km"
+$
+
+==== Kinetische Energie des Satelliten
+Welche kinetische Energie hat der Satellit?
+
+*Lösungsweg:*
+1. $E_"kin"$ aufstellen
+$
+E_"kin"=m/2 dot v^2
+$	
+
+2. v bestimmen
+$
+v=(2 dot pi dot r)/T
+$
+
+3. Zahlen in E_kin Formel einsetzen
+
+==== Flughöhe eines Satelliten bei 2 Umläufen pro Tag
+Welche Flughöhe muss der Satellit haben, wenn er die Erde zweimal pro Tag umrundet?
+
+*Lösungsweg:*
+1. Formel nach r auflösen
+$G dot M/r^3 =ω^2 <=> r=∛((G dot M)/ω^2 )$
+
+2. Winkelgeschwindigkeit berechnen (Ein Tag = 86’400s)
+$omega=(2 dot π)/T=(2 dot phi)/43'200s$
+
+3. r berechnen und Radius der Erde abziehen
+$h=r-r_E$
+
+== Fadenpendel
+=== Winkel eines Fadenpendels
+Unter welchem Winkel muss ein Fadenpendel losgelassen werden, wenn die maximale
+Beanspruchung des Fadens gerade doppelt so gross werden soll wie die beim ruhenden
+Pendel?
+
+(Bild siehe Abschnitt Fadenpendel)
+
+*Lösungsweg:*
+1. Resultierende Kraft ermitteln (Zentripetalkraft) \ $=>$ Bewegungsgleichung
+$
+F_"res" = F - F_G = (m v^2) / l
+$
+
+2. Energieerhaltungssatz anwenden (potentielle Energie = kinetische Energie)
+$
+(m v^2) / 2 &= m g h = m g l (1 - cos(phi)) \
+"(Mal 2, durch l)" ==> (m v^2) / l &= 2 m g (1 - cos(phi))
+$
+
+3. Dies in Bewegungsgleichung einsetzen
+$
+F - F_G = 2 m g (1 - cos(phi))
+$
+
+4. Auflösen nach cos(phi)
+$
+cos(phi) &= 1 - (F - F_G) / (2 F_G) = frac(2 F_G - F + F_G, 2 F_G) = frac(3 F_G - F, 2 F_G) \
+&= frac(3 - F / F_G, 2) 
+$
+
+5. Nach Voraussetzung ist Verhältnis von F und F_G = 2, also $ F : F_G = F / F_G = 2$
+$
+cos(phi) = frac(3 - 2, 2) = 0.5 => phi = 60^circle.small
+$
