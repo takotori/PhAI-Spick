@@ -14,6 +14,55 @@ $
 870261 plus.minus 40125 &= colgreen(8.70 dot 105 plus.minus 0.40 dot 10^5) &= colorange(8.7 dot 10^5) 
 $
 
+== Kinematik
+=== Zeit zwischen zwei Punkten
+Berechnen Sie die Zeit, die ein Trolleybus für die Strecke von 600 m zwischen zwei Hal-
+testellen benötigt, wenn die Anfahrbeschleunigung 1 m/s2, die Bremsverzögerung 0.75
+m/s2 und die Geschwindigkeit während der gleichförmigen Bewegung 54 km/h beträgt.
+
+1. Skizze erstellen und in Zonen aufteilen
+#align(center, image("../figures/aufgaben4.png", width: 60%))
+
+2. Gegebene Werte notieren
+#table(
+  columns: (auto, auto, auto, auto),
+  inset: 4pt,
+  fill: (_, row) => if row == 0 { gray },
+  [Zone 0], [Zone 1], [Zone 2], [Zone 3],
+  $ a_01=1 m/s^2 $, $ a_12=0 m/s^2 $, $ a_23=-0.75 m/s^2 $, $ a_32=0 m/s^2 $,
+  $ r_0=0m $, $ r_1=? $, $ r_2=? $, $ r_3=600m $,
+  $ v_0=0 m/s $, $ v_1 &=54 "km"/h \ &=15 m/s $, $ v_2 &=54 "km"/h \ &=15 m/s $, $ v_3=0 m/s $,
+  $ t_0=0 s $, $ t_1=? $, $ t_2=? $,	$ t_3=? $
+)
+
+3. Fehlende Werte für Zone 1 berechnen in dem man Formeln umstellt
+$
+v_1&=v_0+a_01 dot t_1 \
+t_1&=(v_1-v_0)/a_01 =(15 m/s-0 m/s)/(1 m/s^2 )=15s \
+r_1&=r_0+v_0 dot t_1+1/2   dot a_01 dot t_1^2 \
+&=0m+0 m/s dot 15 s+1/2 dot 1 m/s^2  dot (15m)^2=112.5m  
+$
+4. Nun müssen wir $t_3$ berechnen um damit dann r_2 berechnen zu können
+$
+t_3&=(0 m/s-15 m/s)/(-0.75 m/s^2 )=20s \
+r_3&=r_2+v_2 dot t_3+1/2   dot a_23 dot t_3^2 \
+r_2&=r_3-(v_2 dot t_3 )-(1/2   dot a_23 dot t_3^2 ) \
+r_2&=600m-(15 m/s dot 20 s)-(1/2   dot -0.75 m/s^2  dot (20 s)^2 ) \ &=450m
+$
+
+5. $t_2$ berechnen
+$
+r_2&=r_1+v_1 dot t_2  colred(cancel(+ 1/2   dot a_12 dot t_2^2) "(fällt weg da" a_12=0")") \
+t_2& =(r_2-r_1)/v_1 =(450m-112.5m)/(15 m/s)=22.5s
+$
+6. $t_"Total"$  berechnen
+$
+t_"Total" &=t_0+t_1+t_2+t_3 \
+&=0s+15s+22.5s+20s=57.53 s
+$
+
+== Fussgänger und Radfahrer
+
 == Kräfte
 === Komplexe Kräfteaufgabe
 An der Spitze eines h = 8 m hohen Mastes üben die befestigten Leitungen die Zugkräfte
