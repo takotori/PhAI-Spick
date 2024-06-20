@@ -4,7 +4,7 @@
   gutter: 5pt,
   [*Mittlere Leistung:*], $ macron(P) = W_"AB" /(Delta t) = (Delta E)/(Delta t) $, [],
   [*Momentane \ Leistung:*], $ (d W)/(d t) = arrow(F) dot arrow(v) $, [],
-  [*Wirkungsgrad*], $ eta = W_2/W_1 = P_2/P_1 $, [$W_1 P_1$: aufgenommene Leistung bzw. Arbeit \
+  [*Wirkungsgrad:*], $ eta = W_2/W_1 = P_2/P_1 $, [$W_1 P_1$: aufgenommene Leistung bzw. Arbeit \
 $W_2 P_2$: nutzbare Leistung bzw. Arbeit
 ],
   [*Vortriebskraft:*], $ F = P/v $, [],

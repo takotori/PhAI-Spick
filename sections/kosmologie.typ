@@ -16,11 +16,12 @@ Daraus folgt die Formel für die
 #underline([*Gravitation:*])
 #grid(
   columns: (auto, auto),
+  inset: 5pt,
   [*Gravitationskraft \ zweier Massenpunkte:*], $ F_G=G (m_1 m_2)/r^2 \ arrow(F_G) =-G (m_1 m_2)/r^2 dot arrow(r)/r $,
   [*Potenzielle Energie:*], $ E_p=-G (m_1 m_2)/r $,
   [*Kreisbahngeschwindigkeit:*], $ v= sqrt((G M_E)/r_E ) $,
-  [*Fluchtgeschwindigkeit:*], $ v= sqrt((2G M_E)/r_E ) $,
-  [*Energie Änderung \ bei Bahnänderung:* \
+  [*Fluchtgeschwindigkei:t*], $ v= sqrt((2G M_E)/r_E ) $,
+  [*Energie Änderung \ bei Bahnänderung:* \ #v(5pt)
   $ Delta E &=(G M_E m)/r  (r'-r)/(r' r) \
   r' &= "Radius neue Bahn"$], image("../figures/kosmologie.png")
 )
