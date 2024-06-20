@@ -8,18 +8,25 @@
   [*Gewichtskraft:*], [$F_G=m g $],
   [*Federkraft:*], [$F_F=D y space.quad D &= "Federkonst." \ y &= abs(l - l_0)$],
     [*Hook\`sches Gesetz:*], [$Delta F=D dot Delta y$],
-  [*Zentripetalkraft:*], [$F_Z=(m v^2)/r$],
   [*Schiefe Ebene:* #image("../figures/kraftSchiefeEbene.png")], [$F_G=m g$ \
   #v(5pt)
-  _*Normalkraft:*_ \ 
+  *Normalkraft:* \ 
   $F_N=m g dot cos(alpha) $  \
   #v(5pt)
-  _*Hangabtriebskraft*:_ \
+  *Hangabtriebskraft*: \
   $F_H=m g dot sin(alpha)$  \
   #v(5pt)
-  _*Haftreibungskraft*:_ \
-  $F_"HR"=μ dot F_N$]
+  *Haftreibungskraft:* \
+  $F_"HR"=μ dot F_N$ #v(5pt)],
+  [*Zentripetalkraft / \ Zentrifugalkraft:*], [$F_Z=(m v^2)/r$],
 
+)
+#v(4pt)
+#grid(
+  columns: (45%, auto),
+  gutter: 2pt,
+  image("../figures/Kreiskraefte.png"),
+  text(size: 6pt, [Die *Zentripetalkraft* und *Zentrifugalkraft* wirken bei einer beschleunigten Kreisbewegung und haben die gleiche Formel. Es handelt sich um entgegengesetzte Kräfte, die abhängig von dem Bezugssystem sind. Wird eine Kreisbewegung von außen betrachtet, wirkt nur die Zentripetalkraft. Befindet sich der Beobachter im rotierenden System nimmt er beide Kräfte wahr.]),
 )
 
 == Kraft Statik
