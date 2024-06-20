@@ -11,4 +11,5 @@
 #include "sections/kosmologie.typ"
 #include "sections/fadenpendel.typ"
 #include "sections/analysis.typ"
+#include "sections/aufgaben.typ"
 #include "sections/weiteres.typ"
