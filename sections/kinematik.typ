@@ -55,5 +55,3 @@ x_w &=(v_0^2 sin(2 alpha_0))/g
 $,
 image("../figures/schieferWurf2.png")
 )
-
-== Relativgeschwindigkeit
