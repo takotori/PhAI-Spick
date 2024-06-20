@@ -5,3 +5,5 @@
 #let colmagenta(x) = text(fill: fuchsia, $#x$)
 
 #let colblue(x) = text(fill: blue, $#x$)
+
+#let colred(x) = text(fill: red, $#x$)

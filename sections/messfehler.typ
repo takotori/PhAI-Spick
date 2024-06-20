@@ -59,7 +59,7 @@ $
 $
 m=(2.04±0.19)"kg"
 $
-#text(red)[*Achtung*] $Delta alpha$ muss in Bogenmass sein!
+#colred[*Achtung*] $Delta alpha$ muss in Bogenmass sein!
 #grid(
   columns: (auto, auto),
   inset: 5pt,

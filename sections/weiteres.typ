@@ -15,6 +15,18 @@
 - *Energie:* Seite 85
 
 == Aufgabenbeispiele
+=== Zahlen wissenschaftlich korrekt darstellen
+#colgreen("Mit expliziter Angabe des Messfehlers") und #colorange("ohne"):
+$
+2.521162 plus.minus 0.531 &= colgreen(2.52 plus.minus 0.53) &= colorange(2.5) \
+161261 plus.minus 10000 &= colgreen(1.61 dot 105 plus.minus 0.10 dot 10^5) &= colorange(1.61 dot 10^5) \
+613.627 plus.minus 1.4 &= colgreen(6.136 dot 102 plus.minus 0.014 dot 10^2) &= colorange(6.136 dot 10^2) \
+1610.12 plus.minus 17 &= colgreen(1.610 dot 103 plus.minus 0.017 dot 10^3) &= colorange(1.610 dot 10^3) \
+16.1612 plus.minus 8.7 &= colgreen(1.62 dot 101 plus.minus 0.87 dot 10^1) &= colorange(1.6 dot 10^1) \
+870261 plus.minus 10125 &= colgreen(8.70 dot 105 plus.minus 0.10 dot 10^5) &= colorange(8.70 dot 10^5) \
+870261 plus.minus 40125 &= colgreen(8.70 dot 105 plus.minus 0.40 dot 10^5) &= colorange(8.7 dot 10^5) 
+$
+
 === Ballwurf mit Energieerhaltung
 Ein Kind will einen Ball über eine 2m von ihm entfernte Mauer werfen. Die dazu minimal erforderliche Wurfhöhe ist 10m. Welches ist der minimal erforderliche Betrag der Geschwindigkeit, mit der der Junge den Ball abwerfen muss?
 
@@ -84,3 +96,37 @@ $ F = sqrt((colmagenta([ ])^2 + colblue({ })^2) / (1 - h^2/l^2)) = 3056 N $
 
 9. Winkel $gamma$ erhalten wir als Quotient von Y und X-Gleichung:
 $ gamma = arctan(colblue({ }) / colmagenta([ ])) = 17.3^circle.small $
+
+=== 2. Newtonsche Gesetz (Kräfte in Bewegung)
+Ein Körper A der Masse $1 "kg"$ wird mit Hilfe eines masselosen Seils und einer masselosen,
+reibunsgfreien Umlenkrolle durch einen Körper B der Masse $1.5 "kg"$ auf einer horizontalen
+Ebene gezogen. Der Gleitreibungskoeffizient zwischen dem Körper A und der Ebene
+beträgt $0.5$. Mit welcher Beschleunigung bewegen sich die beiden Körper und wie gross
+ist die Kraft im Seil?
+
+#align(center, image("../figures/aufgaben3.png", width: 50%))
+
+1. Seilkraft für A und B bestimmen \ (#colred([Umlenkrolle lenkt $hat(r)$ um]))
+$
+&F_A=m_a dot a=F_S dot (vec(1,0))+F_R dot (vec(-1,0)) \
+<=> &F_S=m_a dot a+μ dot F_N=m_a dot a+μ dot m_a dot g
+$
+#v(10pt)
+$
+&F_B=m_b dot a=F_G dot (vec(1,0))+F_S dot (vec(-1,0)) \
+<=> &F_S=-m_b dot a+F_G=-m_b dot a+m_b dot g
+$
+
+2. Formeln gleichsetzen und nach $a$ umstellen:
+$
+& m_a dot a+μ dot m_a dot g=-m_b dot a+m_b dot g \
+<=> &a=frac(m_b dot g-μ dot m_a dot g, m_a+m_b) \
+<=> &a = frac(1.5 dot 9.81-0.5 dot 1 dot 9.81, 1+1.5) = 3.92 m/s^2
+$
+
+3. Geschwindigeit in eine der Formeln einsetzen:
+$
+F_S &= m_a dot a+μ dot m_a dot g \ &= 1 dot 3.92+0.5 dot 1 dot 9.81=8.67 N
+$
+
+
