@@ -13,4 +13,3 @@
 - *Kinematik:* Seite 81
 - *Kräfte:* Seite 83
 - *Energie:* Seite 85
-
