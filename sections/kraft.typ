@@ -4,12 +4,12 @@
 #grid(
   columns: (50%, auto),
   gutter: 5pt,
-  [*Kraft*], [$arrow(F)_"res"=m arrow(a)$],
-  [*Gewichtskraft*], [$F_G=m g $],
-  [*Federkraft*], [$F_F=D y space.quad D &= "Federkonst." \ y &= abs(l - l_0)$],
-    [*Hook\`sches Gesetz*], [$Delta F=D dot Delta y$],
-  [*Zentripetalkraft*], [$F_Z=(m v^2)/r$],
-  [*Schiefe Ebene* #image("../figures/kraftSchiefeEbene.png")], [$F_G=m g$ \
+  [*Kraft:*], [$arrow(F)_"res"=m arrow(a)$],
+  [*Gewichtskraft:*], [$F_G=m g $],
+  [*Federkraft:*], [$F_F=D y space.quad D &= "Federkonst." \ y &= abs(l - l_0)$],
+    [*Hook\`sches Gesetz:*], [$Delta F=D dot Delta y$],
+  [*Zentripetalkraft:*], [$F_Z=(m v^2)/r$],
+  [*Schiefe Ebene:* #image("../figures/kraftSchiefeEbene.png")], [$F_G=m g$ \
   #v(5pt)
   _*Normalkraft:*_ \ 
   $F_N=m g dot cos(alpha) $  \
@@ -23,7 +23,7 @@
 )
 
 == Kraft Statik
-In der Statik beewegen sich die Objekte nicht. Dort gilt also: \
+In der Statik bewegen sich die Objekte nicht. Dort gilt also: \
 $ sum F=0, v(t) = 0 m slash s, a(t) = 0 m slash s^2 $
 
 #align(

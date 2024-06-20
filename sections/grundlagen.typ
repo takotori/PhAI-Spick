@@ -43,6 +43,8 @@
 *Produktregel:* $ d/(d x)(f(x) dot g(x)) = f'(x) dot g(x) + f(x) dot g'(x) $
 *Kettenregel:* $ d/(d x)f(g(x)) = f'(g(x)) dot g'(x) $
 
+*Quotientenregel:* $ d/(d x)(f(x)/g(x)) = frac(f'(x) dot g(x) - g'(x) dot f(x), g(x)^2) $
+
 === Physikalische Grössen
 #table(
   columns: (auto, auto, auto, auto),

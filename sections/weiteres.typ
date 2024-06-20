@@ -19,7 +19,7 @@
 Ein Kind will einen Ball über eine 2m von ihm entfernte Mauer werfen. Die dazu minimal erforderliche Wurfhöhe ist 10m. Welches ist der minimal erforderliche Betrag der Geschwindigkeit, mit der der Junge den Ball abwerfen muss?
 
 *Lösungsweg:*
-1. In y-Richtung ($y = 10m$)gilt dank Energieerhaltung:
+1. In y-Richtung ($y = 10m$) gilt dank Energieerhaltung:
 $ 
 1/2 m v_y^2 = m g y \
 v_y = sqrt(2 g y) 
