@@ -1,11 +1,11 @@
 #let conf(lecture: "", authors: "", doc) = {
   let line_skip = 0.4em
   let font_size = 8pt
-let level1_color = "#8c195f";
-let level2_color = "#a12b66"; 
-let level3_color = "#b63d6d"; 
-let level4_color = "#cb4f74"; 
-let level5_color = "#C63B65"; 
+  let level1_color = "#8c195f";
+  let level2_color = "#a12b66"; 
+  let level3_color = "#b63d6d"; 
+  let level4_color = "#cb4f74"; 
+  let level5_color = "#C63B65"; 
 
   show: set block(below: line_skip)
   show: set par(leading: line_skip, justify: true)

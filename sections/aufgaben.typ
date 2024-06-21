@@ -16,9 +16,9 @@ $
 
 == Kinematik
 === Zeit zwischen zwei Punkten
-Berechnen Sie die Zeit, die ein Trolleybus für die Strecke von 600 m zwischen zwei Hal-
-testellen benötigt, wenn die Anfahrbeschleunigung 1 m/s2, die Bremsverzögerung 0.75
-m/s2 und die Geschwindigkeit während der gleichförmigen Bewegung 54 km/h beträgt.
+Berechnen Sie die Zeit, die ein Trolleybus für die Strecke von $600 m$ zwischen zwei Hal-
+testellen benötigt, wenn die Anfahrbeschleunigung $1 m/s^2$, die Bremsverzögerung $0.75
+m/s^2$ und die Geschwindigkeit während der gleichförmigen Bewegung $54 (k m)/h$ beträgt.
 
 *Lösungsweg:*
 1. Skizze erstellen und in Zonen aufteilen
@@ -43,7 +43,7 @@ t_1&=(v_1-v_0)/a_01 =(15 m/s-0 m/s)/(1 m/s^2 )=15s \
 r_1&=r_0+v_0 dot t_1+1/2   dot a_01 dot t_1^2 \
 &=0m+0 m/s dot 15 s+1/2 dot 1 m/s^2  dot (15m)^2=112.5m  
 $
-4. Nun müssen wir $t_3$ berechnen um damit dann r_2 berechnen zu können
+4. Nun müssen wir $t_3$ berechnen um damit dann $r_2$ berechnen zu können
 $
 t_3&=(0 m/s-15 m/s)/(-0.75 m/s^2 )=20s \
 r_3&=r_2+v_2 dot t_3+1/2   dot a_23 dot t_3^2 \
@@ -64,8 +64,8 @@ $
 
 === Fussgänger und Radfahrer
 Ein Radfahrer und ein Fussgänger bewegen sich gleichzeitig von A nach B, wobei der eine
-stündlich 5 km und der andere 15 km zurücklegt. Der Radfahrer hält sich eine Stunde in
-B auf und trifft auf dem Rückweg den Fussgänger 30 km vor B entfernt. Wie gross ist die
+stündlich $5 "km"$ und der andere $15 "km"$ zurücklegt. Der Radfahrer hält sich eine Stunde in
+B auf und trifft auf dem Rückweg den Fussgänger $30 "km"$ vor B entfernt. Wie gross ist die
 Distanz zwischen A und B?
 
 *Lösungsweg:*
@@ -93,7 +93,7 @@ s_"AB" &= frac(30 "km" (frac(1, 5 "km" h^"-1") + frac(1, 15 "km"  h^"-1")) + 1h,
 $
 
 === Schiefer Wurf
-Ein Ball wird unter einem Winkel von 20° (notwendig) schräg nach unten geworfen (12m nach rechts und 7.5m nach unten). Mit welcher Anfangsgeschwindigkeit wurde der Ball geworfen?
+Ein Ball wird unter einem Winkel von $20°$ (notwendig) schräg nach unten geworfen (12m nach rechts und 7.5m nach unten). Mit welcher Anfangsgeschwindigkeit wurde der Ball geworfen?
 #align(center, image("../figures/aufgaben6.png", width: 40%))
 
 *Lösungsweg:*
@@ -131,7 +131,7 @@ s_1 / t = v_0 = 12.77 / 0.8 = 16 m/s
 $
 
 === Radialbeschleunigung
-Ein Riesenrad hat eine Umlaufdauer von 12 s. Wie gross sind Geschwindigkeit und Radialbeschleunigung einer Person im Abstand von 5.6 m von der Drehachse?
+Ein Riesenrad hat eine Umlaufdauer von $12 s$. Wie gross sind Geschwindigkeit und Radialbeschleunigung einer Person im Abstand von $5.6 m$ von der Drehachse?
 
 *Lösungsweg:*
 1. Tangentialgeschwindigkeit $v_T$ berechnen
@@ -146,7 +146,7 @@ $
 
 === Aufprallgeschwindigkeit
 Aus welcher Höhe muss ein Mann herunterspringen, um den gleichen Aufprall zu erleben
-wie ein landender Fallschirmspringer, dessen Sinkgeschwindigkeit 6 m/s beträgt ?
+wie ein landender Fallschirmspringer, dessen Sinkgeschwindigkeit $6 m/s$ beträgt ?
 
 $
 h = frac(v^2, 2 g) = frac(6^2, 2 dot 9.81) = 1.84 m
@@ -154,7 +154,7 @@ $
 
 == Kräfte
 === Komplexe Kräfteaufgabe
-An der Spitze eines h = 8 m hohen Mastes üben die befestigten Leitungen die Zugkräfte
+An der Spitze eines $h = 8 m$ hohen Mastes üben die befestigten Leitungen die Zugkräfte
 $F_1 = 4800 N, F_2 = 1200 N "und" F_3 = 2700 N$ aus. Der Winkel $alpha = 40^circle.small$ und $beta = 30^circle.small$. In
 welcher Richtung $gamma$ muss ein l = 9.6 m langes schräges Drahtseil verankert werden, damit
 an der Mastspitze keine horizontale Kraft wirksam wird? Wie gross ist die Zugkraft F
@@ -202,7 +202,7 @@ Ebene gezogen. Der Gleitreibungskoeffizient zwischen dem Körper A und der Ebene
 beträgt $0.5$. Mit welcher Beschleunigung bewegen sich die beiden Körper und wie gross
 ist die Kraft im Seil?
 
-#align(center, image("../figures/aufgaben3.png", width: 50%))
+#align(center, image("../figures/aufgaben3.png", width: 45%))
 
 *Lösungsweg:*
 1. Seilkraft für A und B bestimmen \ (#colred([Umlenkrolle lenkt $hat(r)$ um]))
@@ -230,7 +230,7 @@ $
 
 == Energie
 === Ballwurf mit Energieerhaltung
-Ein Kind will einen Ball über eine 2m von ihm entfernte Mauer werfen. Die dazu minimal erforderliche Wurfhöhe ist 10m. Welches ist der minimal erforderliche Betrag der Geschwindigkeit, mit der der Junge den Ball abwerfen muss?
+Ein Kind will einen Ball über eine $2m$ von ihm entfernte Mauer werfen. Die dazu minimal erforderliche Wurfhöhe ist $10m$. Welches ist der minimal erforderliche Betrag der Geschwindigkeit, mit der der Junge den Ball abwerfen muss?
 
 *Lösungsweg:*
 1. In y-Richtung ($y = 10m$) gilt dank Energieerhaltung:
@@ -261,7 +261,7 @@ $
 $
 
 === Fall auf eine Feder
-Eine Masse von 12 kg fällt aus 70 cm Höhe auf eine gefederte Unterlage, deren Federkonstante 4000 N/m beträgt. Wieviel wird die Feder beim Aufprall zusammengedrückt?
+Eine Masse von $12 "kg"$ fällt aus $70 "cm"$ Höhe auf eine gefederte Unterlage, deren Federkonstante $4000 N/m$ beträgt. Wieviel wird die Feder beim Aufprall zusammengedrückt?
 
 *Lösungsweg:*
 1. Energieerhaltungssatz anwenden und Gleichungsystem aufstellen
@@ -282,7 +282,7 @@ s &= (m g) / c + sqrt(((m g) / c)^2 + 2 (m g h) / c) \
 $
 == Arbeit / Leistung
 === Leistung einer Lokomotive
-Welche Arbeit (in kWh) leistet eine Lokomotive, die einen Zug von Flüelen nach Göschenen zieht? Die totale Masse des Zuges beträgt $400 t = 400^'000 "kg"$, die Strecke 37 km, die Höhendifferenz 670 m und der Rollreibungskoeffizient 0.002. Der Luftwiderstand werde vernachlässigt.
+Welche Arbeit (in kWh) leistet eine Lokomotive, die einen Zug von Flüelen nach Göschenen zieht? Die totale Masse des Zuges beträgt $400 t = 400^'000 "kg"$, die Strecke $37 "km"$, die Höhendifferenz $670 m$ und der Rollreibungskoeffizient $0.002$. Der Luftwiderstand werde vernachlässigt.
 
 *Lösungsweg:*
 1. Winkel $alpha$ bestimmen mittels Trigometrie
@@ -310,10 +310,10 @@ W=E_0-E_1=(2'919'408'166J - 0J) / (3600s dot 1000) =810.97 "kWh"
 $
 
 === Leistung eines Autos
-Ein Auto braucht bei der Geschwindigkeit 80 km/h auf 100 km 8 Liter Benzin. Wie
+Ein Auto braucht bei der Geschwindigkeit $80 (k m)/h$ auf $100 "km"$ 8 Liter Benzin. Wie
 gross ist der Fahrwiderstand (Rollreibung + Luftwiderstand), wenn der Wirkungsgrad
-des Motors 20 % beträgt? Das Benzin hat eine Dichte von 700 kg/m3 und einen Heizwert
-von 42 MJ/kg.
+des Motors 20 % beträgt? Das Benzin hat eine Dichte von $700 "kg"/m^3$ und einen Heizwert
+von $42 "MJ"/"kg"$.
 
 *Lösungsweg:*
 $
@@ -325,7 +325,7 @@ F &= P_"ab" / v = frac(eta dot P_"zu", v) = frac(eta dot rho.alt dot (d V)/(d s)
 F &= 0.2 dot 700 dot (8 dot 10^(-3) / 10^(-5) dot 42 dot 10^6) = 470 N
 $
 === Pumpleistung
-Welche Wassermenge pro Zeiteinheit fördert eine 4-kW-Pumpe in ein 45 m höher liegendes
+Welche Wassermenge pro Zeiteinheit fördert eine 4-kW-Pumpe in ein $45 m$ höher liegendes
 Reservoir?
 
 *Lösungsweg:*
@@ -405,7 +405,7 @@ $
 
 3. Zahlen in E_kin Formel einsetzen
 
-==== Flughöhe eines Satelliten bei 2 Umläufen pro Tag
+==== Flughöhe Satelliten bei 2 Umläufen pro Tag
 Welche Flughöhe muss der Satellit haben, wenn er die Erde zweimal pro Tag umrundet?
 
 *Lösungsweg:*
