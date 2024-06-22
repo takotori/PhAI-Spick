@@ -1,5 +1,4 @@
 #import "../utils.typ" : *
-
 = Beispiel Aufgaben
 == Allgemein
 === Zahlen wissenschaftlich korrekt darstellen
@@ -93,8 +92,12 @@ s_"AB" &= frac(30 "km" (frac(1, 5 "km" h^"-1") + frac(1, 15 "km"  h^"-1")) + 1h,
 $
 
 === Schiefer Wurf
-Ein Ball wird unter einem Winkel von $20°$ (notwendig) schräg nach unten geworfen (12m nach rechts und 7.5m nach unten). Mit welcher Anfangsgeschwindigkeit wurde der Ball geworfen?
-#align(center, image("../figures/aufgaben6.png", width: 40%))
+#grid(
+  columns: (auto, 30%),
+  gutter: 5pt,
+  [Ein Ball wird unter einem Winkel von $20^circle.small$ (notwendig) schräg nach unten geworfen (12m nach rechts und 7.5m nach unten). ], image("../figures/aufgaben6.png")
+)
+Mit welcher Anfangsgeschwindigkeit wurde der Ball geworfen?
 
 *Lösungsweg:*
 1. Richtungsgleichung aufstellen
@@ -160,13 +163,13 @@ welcher Richtung $gamma$ muss ein l = 9.6 m langes schräges Drahtseil verankert
 an der Mastspitze keine horizontale Kraft wirksam wird? Wie gross ist die Zugkraft F
 im Seil?
 
-#image("../figures/aufgaben1.png")
+#align(center, image("../figures/aufgaben1.png", width: 75%))
 
 *Lösungsweg:*
 Aus dem Seitenriss geht hervor, dass die Kraft F in eine horizontale (xy-Ebene) Kompo-
 nente $F_"xy" = F cos delta$ und in eine vertikale (z-Richtung) Komponente $F_z = F sin delta$ zerlegt
 werden kann. Somit:
-#image("../figures/aufgaben2.png")
+#align(center, image("../figures/aufgaben2.png", width: 75%))
 
 1. Gleichgewicht in x-Richtung:
 $ - F_1  + F_2 cos(alpha) + F_3 cos(beta) + F cos(delta) cos(gamma) = 0 $
@@ -196,13 +199,15 @@ $ F = sqrt((colmagenta([ ])^2 + colblue({ })^2) / (1 - h^2/l^2)) = 3056 N $
 $ gamma = arctan(colblue({ }) / colmagenta([ ])) = 17.3^circle.small $
 
 === 2. Newtonsche Gesetz (Kräfte in Bewegung)
-Ein Körper A der Masse $1 "kg"$ wird mit Hilfe eines masselosen Seils und einer masselosen,
+#grid(
+  columns: (auto, 45%),
+  gutter: 5pt,
+  [Ein Körper A der Masse $1 "kg"$ wird mit Hilfe eines masselosen Seils und einer masselosen,
 reibunsgfreien Umlenkrolle durch einen Körper B der Masse $1.5 "kg"$ auf einer horizontalen
 Ebene gezogen. Der Gleitreibungskoeffizient zwischen dem Körper A und der Ebene
 beträgt $0.5$. Mit welcher Beschleunigung bewegen sich die beiden Körper und wie gross
-ist die Kraft im Seil?
-
-#align(center, image("../figures/aufgaben3.png", width: 45%))
+ist die Kraft im Seil?], image("../figures/aufgaben3.png")
+)
 
 *Lösungsweg:*
 1. Seilkraft für A und B bestimmen \ (#colred([Umlenkrolle lenkt $hat(r)$ um]))
@@ -228,6 +233,40 @@ $
 F_S &= m_a dot a+μ dot m_a dot g \ &= 1 dot 3.92+0.5 dot 1 dot 9.81=8.67 N
 $
 
+=== Bewegung zwei Körper
+Wir betrachten zwei Wagen mit den Massen $m_1 = 150 g$ und $m_2 = 100 g,$ die sich reibungslos bewegen können. 
+Zwischen den Wagen befindet sich eine Feder mit einer ungespannten
+Länge von $l_0 = 10 "cm"$ und einer Federkonstante von $k = 100 N m^(-1)$, die zunächst auf eine
+Länge von $l = 5.0 "cm"$ zusammengestaucht wird. Bei $t = 0 $werden die Wagen losgelassen
+und fangen an zu beschleunigen. Die Feder ist an den Wagen befestigt, so dass sich die
+Wagen nicht beliebig voneinander entfernen können.
+
+$=>$ Wagen pendeln hin und her
+
+*Bewegungsgleichung:*
+$
+m_1 dot.double(x_1) = k dot (x_2 -x_1 - l_0) \ 
+m_2 dot.double(x_2) = -k dot (x_2 - x_1 - l_0)
+$
+
+*Funktion der Zeit:*
+$
+Delta x &= x_2 - x_1 = x_R + l_0 \ &= A cos(sqrt(k/m_1 +k/m_2) t) + B sin(sqrt(k/m_1 + k/m_2) t) + l_0
+$
+
+1. Mittels Abletitung der Funktion der Zeit Startwerte bestimmen:
+$
+Delta x (0) = A + l_0  => A = Delta x(0) - l_0 = 5 "cm" - 10 "cm" = -5 "cm" \
+Delta x (0) = B sqrt(k/m_1 + k/m_2) = 0 => B = 0
+$
+
+2. A und B in Funktion der Zeit einsetzen:
+$
+Delta x &= -5 "cm" cos(sqrt(100/0.15 + 100/0.1) dot t) + 10 "cm" \
+&= -5 "cm" cos((40.8 dot t )/ 1s) + 10 "cm" \
+T &= 2 pi / 40.8 = 0.154 s
+
+$
 == Energie
 === Ballwurf mit Energieerhaltung
 Ein Kind will einen Ball über eine $2m$ von ihm entfernte Mauer werfen. Die dazu minimal erforderliche Wurfhöhe ist $10m$. Welches ist der minimal erforderliche Betrag der Geschwindigkeit, mit der der Junge den Ball abwerfen muss?
