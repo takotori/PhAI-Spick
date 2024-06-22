@@ -95,9 +95,9 @@ $
 #grid(
   columns: (auto, 30%),
   gutter: 5pt,
-  [Ein Ball wird unter einem Winkel von $20^circle.small$ (notwendig) schräg nach unten geworfen (12m nach rechts und 7.5m nach unten). ], image("../figures/aufgaben6.png")
+  [Ein Ball wird unter einem Winkel von $20^circle.small$ (notwendig) schräg nach unten geworfen (12m nach rechts und 7.5m nach unten). Mit welcher Anfangsgeschwindigkeit wurde der Ball geworfen?], image("../figures/aufgaben6.png")
 )
-Mit welcher Anfangsgeschwindigkeit wurde der Ball geworfen?
+
 
 *Lösungsweg:*
 1. Richtungsgleichung aufstellen
@@ -205,9 +205,10 @@ $ gamma = arctan(colblue({ }) / colmagenta([ ])) = 17.3^circle.small $
   [Ein Körper A der Masse $1 "kg"$ wird mit Hilfe eines masselosen Seils und einer masselosen,
 reibunsgfreien Umlenkrolle durch einen Körper B der Masse $1.5 "kg"$ auf einer horizontalen
 Ebene gezogen. Der Gleitreibungskoeffizient zwischen dem Körper A und der Ebene
-beträgt $0.5$. Mit welcher Beschleunigung bewegen sich die beiden Körper und wie gross
-ist die Kraft im Seil?], image("../figures/aufgaben3.png")
+beträgt $0.5$. ], image("../figures/aufgaben3.png")
 )
+Mit welcher Beschleunigung bewegen sich die beiden Körper und wie gross
+ist die Kraft im Seil?
 
 *Lösungsweg:*
 1. Seilkraft für A und B bestimmen \ (#colred([Umlenkrolle lenkt $hat(r)$ um]))
@@ -237,7 +238,7 @@ $
 Wir betrachten zwei Wagen mit den Massen $m_1 = 150 g$ und $m_2 = 100 g,$ die sich reibungslos bewegen können. 
 Zwischen den Wagen befindet sich eine Feder mit einer ungespannten
 Länge von $l_0 = 10 "cm"$ und einer Federkonstante von $k = 100 N m^(-1)$, die zunächst auf eine
-Länge von $l = 5.0 "cm"$ zusammengestaucht wird. Bei $t = 0 $werden die Wagen losgelassen
+Länge von $l = 5.0 "cm"$ zusammengestaucht wird. Bei $t = 0 $ werden die Wagen losgelassen
 und fangen an zu beschleunigen. Die Feder ist an den Wagen befestigt, so dass sich die
 Wagen nicht beliebig voneinander entfernen können.
 
@@ -264,7 +265,7 @@ $
 $
 Delta x &= -5 "cm" cos(sqrt(100/0.15 + 100/0.1) dot t) + 10 "cm" \
 &= -5 "cm" cos((40.8 dot t )/ 1s) + 10 "cm" \
-T &= 2 pi / 40.8 = 0.154 s
+T &= (2 pi) / 40.8 = 0.154 s
 
 $
 == Energie
