@@ -198,6 +198,7 @@ $ F = sqrt((colmagenta([ ])^2 + colblue({ })^2) / (1 - h^2/l^2)) = 3056 N $
 9. Winkel $gamma$ erhalten wir als Quotient von Y und X-Gleichung:
 $ gamma = arctan(colblue({ }) / colmagenta([ ])) = 17.3^circle.small $
 
+#colbreak()
 === 2. Newtonsche Gesetz (Kräfte in Bewegung)
 #grid(
   columns: (auto, 45%),
@@ -268,6 +269,7 @@ Delta x &= -5 "cm" cos(sqrt(100/0.15 + 100/0.1) dot t) + 10 "cm" \
 T &= (2 pi) / 40.8 = 0.154 s
 
 $
+#colbreak()
 == Energie
 === Ballwurf mit Energieerhaltung
 Ein Kind will einen Ball über eine $2m$ von ihm entfernte Mauer werfen. Die dazu minimal erforderliche Wurfhöhe ist $10m$. Welches ist der minimal erforderliche Betrag der Geschwindigkeit, mit der der Junge den Ball abwerfen muss?

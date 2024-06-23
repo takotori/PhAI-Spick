@@ -28,4 +28,3 @@ Daraus folgt die Formel für die
 
 *Potenzielle Energie eines Objekts im Gravitationsfeld eines anderen:*
 $ E_p=(G M_E m)/r $
-#colbreak()

@@ -1,6 +1,6 @@
 #let conf(lecture: "", authors: "", doc) = {
   let line_skip = 0.4em
-  let font_size = 8pt
+  let font_size = 7.5pt
   let level1_color = "#8c195f";
   let level2_color = "#a12b66"; 
   let level3_color = "#b63d6d"; 
