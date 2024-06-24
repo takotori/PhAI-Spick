@@ -8,7 +8,8 @@
 
 Die Energie-Erhaltung sagt uns, dass potenzielle
 Energie gleich kinetische Energie ist. Daraus folgt:
-$(m v^2)/2 &=m g h \ &= m g(l-l dot cos(phi) ) \ &= m g l(1-cos(φ) )$
+
+$ (m v^2)/2 &=m g h \ &= m g(l-l dot cos(phi) ) \ &= m g l(1-cos(φ) ) $
 
 
 *Schwingungsdauer:*

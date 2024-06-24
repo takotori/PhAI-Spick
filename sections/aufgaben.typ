@@ -15,17 +15,16 @@ $
 
 == Kinematik
 === Zeit zwischen zwei Punkten
-Berechnen Sie die Zeit, die ein Trolleybus für die Strecke von $600 m$ zwischen zwei Hal-
-testellen benötigt, wenn die Anfahrbeschleunigung $1 m/s^2$, die Bremsverzögerung $0.75
+Berechnen Sie die Zeit, die ein Trolleybus für die Strecke von $600 m$ zwischen zwei Haltestellen benötigt, wenn die Anfahrbeschleunigung $1 m/s^2$, die Bremsverzögerung $0.75
 m/s^2$ und die Geschwindigkeit während der gleichförmigen Bewegung $54 (k m)/h$ beträgt.
 
 *Lösungsweg:*
 1. Skizze erstellen und in Zonen aufteilen
-#align(center, image("../figures/aufgaben4.png", width: 75%))
+#align(center, image("../figures/aufgaben4.png"))
 
 2. Gegebene Werte notieren
 #table(
-  columns: (auto, auto, auto, auto),
+  columns: (1fr, 1fr, 1fr, 1fr),
   inset: 4pt,
   fill: (_, row) => if row == 0 { gray },
   [Zone 0], [Zone 1], [Zone 2], [Zone 3],
@@ -35,6 +34,7 @@ m/s^2$ und die Geschwindigkeit während der gleichförmigen Bewegung $54 (k m)/h
   $ t_0=0 s $, $ t_1=? $, $ t_2=? $,	$ t_3=? $
 )
 
+#colbreak()
 3. Fehlende Werte für Zone 1 berechnen in dem man Formeln umstellt
 $
 v_1&=v_0+a_01 dot t_1 \

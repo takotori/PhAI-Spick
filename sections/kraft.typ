@@ -60,11 +60,16 @@ $ F_L vec(-cos(alpha),sin(alpha))+F_R vec(cos(beta),sin(beta))+m g vec(0,-1)=0 $
   image("../figures/kraftStatik3.png"),
   image("../figures/kraftStatik4.png")
 )
-Eine $20 "kN"$ schwere Luftseilbahnkabine hängt reibungsfrei an einem Tragseil und wirddurch ein Zugseil festgehalten. Wie gross sind die Zugkräfte im Zug- und im Tragseil?
+Eine $20 "kN"$ schwere Luftseilbahnkabine hängt reibungsfrei an einem Tragseil und wird durch ein Zugseil festgehalten. 
 
-($alpha = 20^circle.small$ = 20◦ und $beta = 20^circle.small$)
+Wie gross sind die Zugkräfte im Zug- und im Tragseil?
+
+($alpha = 20^circle.small$ und $beta = 20^circle.small$)
+#v(5pt)
 $ 
-F_"S1" = F_"S2" = F_T \ 
+F_"S1" = F_"S2" = F_T 
+$
+$
 F_T vec(cos(180^circle.small - 20^circle.small),sin(180^circle.small - 20^circle.small))  +F_T vec(cos(20^circle.small),sin(20^circle.small)) \ + F_Z vec(cos(20^circle.small),sin(20^circle.small)) + vec(0,-20 "kN")=0 \
 ==> F_T = 9.97 dot 10^4 N, F_Z = 8.48 dot 10^3 N
 $
