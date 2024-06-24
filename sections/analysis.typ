@@ -7,6 +7,7 @@ $ f(x, y) &= x^2 dot sin(y) \
  x(t) &= sin(t) \
  y(t) &= t^3 $
 
+#colbreak()
 *Partielle Ableitung:* \
 Nach $x$ und $y$ getrennt ableiten.
 $ frac(diff f, diff x) = frac(diff f, diff x) (x^2 dot sin(y)) = 2x dot sin(y) $
