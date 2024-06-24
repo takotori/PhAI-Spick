@@ -1,5 +1,6 @@
 #import "../utils.typ" : *
 
+= Weiteres
 == Differential Equations
 1. *Bewegungsgleichung aufstellen:*\
   Die Bewegungsgleichung für eine harmonische Schwingung lautet:
@@ -35,7 +36,6 @@ Zusammenfassend ergibt sich die Lösung der Bewegungsgleichung unter Berücksich
 
 Diese Gleichung beschreibt die Bewegung eines harmonischen Oszillators unter Berücksichtigung der Anfangsbedingungen $s lr((0)) = s_0$ und $dot(s) lr((0)) = v_0$.
 
-= Weiteres
 == Taschenrechner
 - *Menu → 3 → 1* für solve()
 - *Menu → 3 → 7 → 1* für Gleichungsystem lösen
