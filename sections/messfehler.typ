@@ -49,8 +49,9 @@ m &=(10N)/(9.81 m\/s^2 dot sin(30^circle.small) )=2.0387
 $
 Partielle Ableitungen:
 $
-frac(partial m, partial g) (F_H/(g dot sin(alpha)) ))=-F_H/(g^2 dot sin(alpha) ) \
-frac(partial m, partial alpha) (F_H/(g dot sin(alpha)) ))=-(F_H dot cos(alpha))/(g dot sin^2^circle.small (F_H))
+frac(partial m, partial g) (F_H/(g dot sin(alpha)) )) &=-F_H/(g^2 dot sin(alpha) ) \
+frac(partial m, partial alpha) (F_H/(g dot sin(alpha)) )) &=-(F_H dot cos(alpha))/(g dot sin^2 (alpha)) \
+frac(partial m, partial F_H) (F_H/(g dot sin(alpha)) )) &=1/(g dot sin (alpha))
 $
 $
 Delta m &= abs(-F_H/(g^2 dot sin(alpha)) dot colmagenta(Delta g)) +  abs(-(F_H dot cos(alpha))/(g dot sin^2 (F_H ) ) dot colorange(Delta alpha)) \ &+ abs(1/(g dot sin(alpha)) dot colgreen(Delta 
