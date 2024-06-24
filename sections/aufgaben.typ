@@ -69,7 +69,7 @@ Distanz zwischen A und B?
 
 *Lösungsweg:*
 1. s-t-Diagramm erstellen
-#align(center, image("../figures/aufgaben5.png", width: 40%))
+#align(center, image("../figures/aufgaben5.png", width: 75%))
 
 2. Formel für Zeit des Fussgänger, $t_F$ aufstellen.
 $
@@ -80,7 +80,7 @@ $
 $
 t_R = frac(s_"AB" + Delta s, v_R) + Delta t
 $
-
+#colbreak()
 4. Da gemäss s-t-Diagramm beide Zeiten gleich sind, können wir die beiden Gleichungen gleichsetzen und nach $S_"AB"$ umstellen.
 $
 t_F &= t_R \
@@ -95,12 +95,14 @@ $
 #grid(
   columns: (auto, 30%),
   gutter: 5pt,
-  [Ein Ball wird unter einem Winkel von $20^circle.small$ (notwendig) schräg nach unten geworfen (12m nach rechts und 7.5m nach unten). Mit welcher Anfangsgeschwindigkeit wurde der Ball geworfen?], image("../figures/aufgaben6.png")
+  [Ein Ball wird unter einem Winkel von $20^circle.small$ (notwendig) schräg nach unten geworfen (12m nach rechts und 7.5m nach unten). Mit welcher Anfangsgeschwindigkeit wurde der Ball geworfen?
+  
+  *Lösungsweg:*
+  1. Richtungsgleichung aufstellen
+  ], image("../figures/aufgaben6.png")
 )
 
 
-*Lösungsweg:*
-1. Richtungsgleichung aufstellen
 $
 arrow(r) = arrow(r_0) + arrow(v_0) dot t + 1/2 dot arrow(a) dot t^2
 $
@@ -163,13 +165,12 @@ welcher Richtung $gamma$ muss ein l = 9.6 m langes schräges Drahtseil verankert
 an der Mastspitze keine horizontale Kraft wirksam wird? Wie gross ist die Zugkraft F
 im Seil?
 
-#align(center, image("../figures/aufgaben1.png", width: 75%))
+#align(center, image("../figures/aufgaben1.png"))
 
 *Lösungsweg:*
-Aus dem Seitenriss geht hervor, dass die Kraft F in eine horizontale (xy-Ebene) Kompo-
-nente $F_"xy" = F cos delta$ und in eine vertikale (z-Richtung) Komponente $F_z = F sin delta$ zerlegt
+Aus dem Seitenriss geht hervor, dass die Kraft F in eine horizontale (xy-Ebene) Kompo nente $F_"xy" = F cos delta$ und in eine vertikale (z-Richtung) Komponente $F_z = F sin delta$ zerlegt
 werden kann. Somit:
-#align(center, image("../figures/aufgaben2.png", width: 75%))
+#align(center, image("../figures/aufgaben2.png"))
 
 1. Gleichgewicht in x-Richtung:
 $ - F_1  + F_2 cos(alpha) + F_3 cos(beta) + F cos(delta) cos(gamma) = 0 $
@@ -256,7 +257,7 @@ $
 Delta x &= x_2 - x_1 = x_R + l_0 \ &= A cos(sqrt(k/m_1 +k/m_2) t) + B sin(sqrt(k/m_1 + k/m_2) t) + l_0
 $
 
-1. Mittels Abletitung der Funktion der Zeit Startwerte bestimmen:
+1. Mittels Ableitung der Funktion der Zeit Startwerte bestimmen:
 $
 Delta x (0) = A + l_0  => A = Delta x(0) - l_0 = 5 "cm" - 10 "cm" = -5 "cm" \
 Delta x (0) = B sqrt(k/m_1 + k/m_2) = 0 => B = 0
@@ -296,7 +297,7 @@ $
 4. Die gesuchte Geschwindigkeit ist:
 $
 v &= sqrt(v_x^2 + v_y^2) = sqrt((g x^2) / (2 y) + 2 g y) \ 
-&= sqrt((9.81 m \/ s^2 dot 2^2 m^2) / (2 dot 10m) + 2 dot 9.81 m \/ s^2 * 10m)
+&= sqrt((9.81 m \/ s^2 dot 2^2 m^2) / (2 dot 10m) + 2 dot 9.81 m \/ s^2 dot 10m)
 $
 $
 = sqrt(198 m^2 \/ s^2)= 14 m \/ s
@@ -324,7 +325,7 @@ s &= (m g) / c + sqrt(((m g) / c)^2 + 2 (m g h) / c) \
 $
 == Arbeit / Leistung
 === Leistung einer Lokomotive
-Welche Arbeit (in kWh) leistet eine Lokomotive, die einen Zug von Flüelen nach Göschenen zieht? Die totale Masse des Zuges beträgt $400 t = 400^'000 "kg"$, die Strecke $37 "km"$, die Höhendifferenz $670 m$ und der Rollreibungskoeffizient $0.002$. Der Luftwiderstand werde vernachlässigt.
+Welche Arbeit (in kWh) leistet eine Lokomotive, die einen Zug von Flüelen nach Göschenen zieht? Die totale Masse des Zuges beträgt $400 t = 400^'000 "kg"$, die Strecke $37 "km" = 37^' 000m$, die Höhendifferenz $670 m$ und der Rollreibungskoeffizient $0.002$. Der Luftwiderstand werde vernachlässigt.
 
 *Lösungsweg:*
 1. Winkel $alpha$ bestimmen mittels Trigometrie
@@ -359,7 +360,7 @@ von $42 "MJ"/"kg"$.
 
 *Lösungsweg:*
 $
-P_"ab" = F * v, P_"zu" = rho.alt dot (d V) / (d t) "(Benzinvolumen)" dot H "(Heizwert)" \
+P_"ab" = F dot v, P_"zu" = rho.alt dot (d V) / (d t) "(Benzinvolumen)" dot H "(Heizwert)" \
 P_"zu" = rho.alt dot (d V) / (d s) "(Literverbrauch)" dot (d s) / (d t) dot H = rho.alt dot (d V) / (d s) dot v dot H 
 $
 $
@@ -455,7 +456,7 @@ Welche Flughöhe muss der Satellit haben, wenn er die Erde zweimal pro Tag umrun
 $G dot M/r^3 =ω^2 <=> r=∛((G dot M)/ω^2 )$
 
 2. Winkelgeschwindigkeit berechnen (Ein Tag = 86’400s)
-$omega=(2 dot π)/T=(2 dot phi)/43'200s$
+$omega=(2 dot π)/T=(2 dot phi)/(43'200s)$
 
 3. r berechnen und Radius der Erde abziehen
 $h=r-r_E$
@@ -474,7 +475,7 @@ $
 F_"res" = F - F_G = (m v^2) / l
 $
 
-2. Energieerhaltungssatz anwenden (potentielle Energie = kinetische Energie)
+2. Energieerhaltungssatz anwenden \ (potentielle Energie = kinetische Energie)
 $
 (m v^2) / 2 &= m g h = m g l (1 - cos(phi)) \
 "(Mal 2, durch l)" ==> (m v^2) / l &= 2 m g (1 - cos(phi))
@@ -485,13 +486,13 @@ $
 F - F_G = 2 m g (1 - cos(phi))
 $
 
-4. Auflösen nach cos(phi)
+4. Auflösen nach $cos(phi)$
 $
 cos(phi) &= 1 - (F - F_G) / (2 F_G) = frac(2 F_G - F + F_G, 2 F_G) = frac(3 F_G - F, 2 F_G) \
 &= frac(3 - F / F_G, 2) 
 $
 
-5. Nach Voraussetzung ist Verhältnis von F und F_G = 2, also $ F : F_G = F / F_G = 2$
+5. Verhältnis von $F "und" F_G = 2$, also $ F : F_G = F / F_G = 2$
 $
 cos(phi) = frac(3 - 2, 2) = 0.5 => phi = 60^circle.small
 $

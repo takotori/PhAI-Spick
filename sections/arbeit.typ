@@ -11,7 +11,7 @@
 #grid(
   columns: (auto, auto),
   gutter: 5pt,
-  $ W &= F_s s \
+  $ W &= F_s dot s \
   W &= F dot s dot cos(alpha) = arrow(F) dot arrow(s) $,
   image("../figures/arbeit.jpg")
 )
